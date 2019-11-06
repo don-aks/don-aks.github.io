@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<title>BodyRepair - Продажа кузовных запчастей</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap&subset=latin-ext" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon32.ico">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,6 @@
 				<a href="#" class="logo header-logo">
 					<img src="img/logo/white.png" alt="Логотип">
 				</a>
-				</div>
 				<div class="call header-call">
 					<a href="tel:88002323212" class="call__number header-call__number">8 800 232 32 12</a>
 					<a href="#" class="call__request header-call__request">
@@ -52,16 +51,16 @@
 					</li>
 				</ul>
 				<div class="header-buttons">
-					<div class="header-buttons__quick">
-						<button class="button">
+					<div class="header__buttons">
+						<button class="button header__button">
 							Быстрая заявка
 						</button>
 						<div class="header-buttons__descr">
 							Мы перезвоним Вам для уточнения деталей.
 						</div>
 					</div>
-					<div class="header-buttons__detailed">
-						<button class="button-transparent">
+					<div class="header__buttons">
+						<button class="button button_transparent header__button">
 							Подробная заявка
 						</button>
 						<div class="header-buttons__descr">
@@ -76,7 +75,7 @@
 
 <section class="info">
 	<div class="container">
-		 <ul class="list info-list">
+		 <ul class="info-list">
 		 	<li class="info-list__item">
 		 		<img src="img/info/item1.png" alt="">
 		 		<h3 class="info-list__title">
@@ -126,73 +125,75 @@
 	</div>
 </section>
 
-<section class="request">
+<section class="request section_gray">
 	<div class="container">
-			<h2 class="section-title"></h2>
-			<h3 class="section-descr"></h3>
-		<div class="request-form__wrapper">
-			<form class="form request-form">
-				<label class="form__label">
-					<div class="form__descr">
-						Марка:
-					</div>
-					<select name="Марка" class="request-form__select">
-					<option hidden>Выберите марку</option>
-					<option value="BMW">BMW</option>
-					<option value="Mercedes-Bens">Mercedes-Bens</option>
-					<option value="AUDI">AUDI</option>
+		<h2 class="section-title">
+			Подробная заявка
+		</h2>
+		<h3 class="section-descr">
+			Заполните форму и получите максимально точную цену!
+		</h3>
+		<form class="form request-form">
+			<label class="form__label">
+				<div class="form__descr">
+					Марка:
+				</div>
+				<select name="Марка" class="select request-form__select">
+				<option class="select__option request-form__option" hidden>Выберите марку</option>
+				<option class="select__option request-form__option" value="BMW">BMW</option>
+				<option class="select__option request-form__option" value="Mercedes-Bens">Mercedes-Bens</option>
+				<option class="select__option request-form__option" value="AUDI">AUDI</option>
+			</select>
+			</label>
+			
+			<label class="form__label">
+				<div class="form__descr">
+					Модель:
+				</div>
+				<select name="Модель" class="select request-form__select">
+					<option class="select__option request-form__option" hidden>Выберите модель</option>
+					<option class="select__option request-form__option" value="BMW">BMW</option>
+					<option class="select__option request-form__option" value="Mercedes-Bens">Mercedes-Bens</option>
+					<option class="select__option request-form__option" value="AUDI">AUDI</option>
 				</select>
-				</label>
-				
-				<label class="form__label">
-					<div class="form__descr">
-						Модель:
-					</div>
-					<select name="Модель" class="request-form__select">
-						<option hidden>Выберите модель</option>
-						<option value="BMW">BMW</option>
-						<option value="Mercedes-Bens">Mercedes-Bens</option>
-						<option value="AUDI">AUDI</option>
-					</select>
-				</label>
-				<label class="form__label">
-					<div class="form__descr">
-						Год выпуска:
-					</div>
-					<select name="Год выпуска" class="request-form__select">
-						<option hidden>Выберите год</option>
-						<option value="2008">2008</option>
-						<option value="2009">2009</option>
-						<option value="2010">2010</option>
-					</select>
-				</label>
-				<label class="form__label">
-					<div class="form__descr">
-						Необходимые детали:
-					</div>
-					<textarea class="request-form__textarea" placeholder="Введите"></textarea>
-				</label>
-				<label class="form__label">
-					<div class="form__descr">
-						Ваше имя:
-					</div>
-					<input type="text" class="form__input" placeholder="Введите">
-				</label>
-				<label class="form__label">
-					<div class="form__descr">
-						Ваш телефон:
-					</div>
-					<input type="text" class="input request-form__input" placeholder="Введите">
-				</label>
-				<label class="form__label">
-					<div class="form__descr">
-						Ваш e-mail:
-					</div>
-					<input type="text" class="input request-form__input" placeholder="Введите">
-				</label>
-				<button class="button" type="submit">Узнать цену</button>
-			</form>
-		</div>
+			</label>
+			<label class="form__label">
+				<div class="form__descr">
+					Год выпуска:
+				</div>
+				<select name="Год выпуска" class="select request-form__select">
+					<option class="select__option request-form__option" hidden>Выберите год</option>
+					<option class="select__option request-form__option" value="2008">2008</option>
+					<option class="select__option request-form__option" value="2009">2009</option>
+					<option class="select__option request-form__option" value="2010">2010</option>
+				</select>
+			</label>
+			<label class="form__label">
+				<div class="form__descr">
+					Необходимые детали:
+				</div>
+				<textarea class="textarea request-form__textarea" placeholder="Введите"></textarea>
+			</label>
+			<label class="form__label">
+				<div class="form__descr">
+					Ваше имя:
+				</div>
+				<input type="text" class="input request-form__input" placeholder="Введите">
+			</label>
+			<label class="form__label">
+				<div class="form__descr">
+					Ваш телефон:
+				</div>
+				<input type="text" class="input request-form__input request-form__input js-input__telephone" placeholder="+7 (9__) ___-__-__">
+			</label>
+			<label class="form__label">
+				<div class="form__descr">
+					Ваш e-mail:
+				</div>
+				<input type="text" class="input request-form__input" placeholder="Введите">
+			</label>
+			<button class="button" type="submit">Узнать цену</button>
+		</form>
 	</div>
 </section>
 
@@ -201,45 +202,24 @@
 		<h2 class="section-title">
 			Имеем в наличии детали на авто:
 		</h2>
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item1.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item2.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item3.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item4.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item5.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item6.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item7.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item8.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item9.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item10.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item11.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item12.png" alt="">
-		</div>
-		<div class="brends__logotype">
-			<img src="img/brends/item13.png" alt="">
+		<div class="brends__inner">
+			<div class="brends__header">
+				<img src="img/brends/item1.png" alt="AUDI" class="brends__img">
+				<img src="img/brends/item2.png" alt="Mercedes Benz" class="brends__img">
+				<img src="img/brends/item3.png" alt="BMW" class="brends__img">
+				<img src="img/brends/item4.png" alt="Volkswagen" class="brends__img">
+				<img src="img/brends/item5.png" alt="Jaguar" class="brends__img">
+			</div>
+			<div class="brends__footer">
+				<img src="img/brends/item6.png" alt="Volvo" class="brends__img">
+				<img src="img/brends/item7.png" alt="Mini" class="brends__img">
+				<img src="img/brends/item8.png" alt="Landrover" class="brends__img">
+				<img src="img/brends/item9.png" alt="Honda" class="brends__img">
+				<img src="img/brends/item10.png" alt="Jeep" class="brends__img">
+				<img src="img/brends/item11.png" alt="Bentley" class="brends__img">
+				<img src="img/brends/item12.png" alt="Porshe" class="brends__img">
+				<img src="img/brends/item13.png" alt="Mazda" class="brends__img">
+			</div>
 		</div>
 	</div>
 </section>
@@ -250,37 +230,38 @@
 			Вы можете посмотреть что происходит у нас!
 		</h2>
 		<div class="video__screen">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/kpCsB_zNM0E" frameborder="0" allow="accelerometer; auheaderlay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<!-- width="780" height="390"  -->
+			<iframe src="https://www.youtube.com/embed/kpCsB_zNM0E" frameborder="0" allow="accelerometer; auheaderlay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 </section>
 
-<section class="reviews">
+<section class="reviews section_gray">
 	<div class="container">
 		<h2 class="section-title">
 			Клиенты о нас
 		</h2>
-		<div class="reviews__wrapper">
+		<div class="reviews__inner">
 			<div class="reviews__item">
-				<img src="img/reviews/item1.jpg" alt="" class="reviews__">
+				<img src="img/reviews/item1.jpg" alt="" class="reviews__img">
 				<div class="reviews__author">Иван Иванович</div>
 				<div class="reviews__title">Не могу найти фару для авто</div>
 				<span class="reviews__text">Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</span>
 			</div>
 			<div class="reviews__item">
-				<img src="img/reviews/item2.jpg" alt="" class="reviews__">
+				<img src="img/reviews/item2.jpg" alt="" class="reviews__img">
 				<div class="reviews__author">Иван Иванович</div>
 				<div class="reviews__title">Не могу найти фару для авто</div>
 				<span class="reviews__text">Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</span>
 			</div>
 			<div class="reviews__item">
-				<img src="img/reviews/item3.jpg" alt="" class="reviews__">
+				<img src="img/reviews/item3.jpg" alt="" class="reviews__img">
 				<div class="reviews__author">Иван Иванович</div>
 				<div class="reviews__title">Не могу найти фару для авто</div>
 				<span class="reviews__text">Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</span>
 			</div>
 			<div class="reviews__item">
-				<img src="img/reviews/item4.jpg" alt="" class="reviews__">
+				<img src="img/reviews/item4.jpg" alt="" class="reviews__img">
 				<div class="reviews__author">Иван Иванович</div>
 				<div class="reviews__title">Не могу найти фару для авто</div>
 				<span class="reviews__text">Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</span>
@@ -302,13 +283,13 @@
 				<div class="form__descr">
 					Имя:
 				</div>
-				<input type="text" class="form__input">
+				<input type="text" class="input" placeholder="Введите">
 			</label>
 			<label class="form__label">
 				<div class="form__descr">
 					Телефон:
 				</div>
-				<input type="text" class="form__input">
+				<input type="text" class="input js-input__telephone" placeholder="+7 (9__) ___-__-__">
 			</label>
 			<button class="button">Заказать консультацию</button>
 		</form>
@@ -334,5 +315,9 @@
 		</div>
 	</div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
