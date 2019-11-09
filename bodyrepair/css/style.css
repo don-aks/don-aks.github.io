@@ -374,7 +374,7 @@ ul {
 
 /*======= VIDEO =======*/
 
-.video__screen {
+.video-screen {
 	border: 15px solid #fff;
 	outline: 5px solid #f2f2f2;
 	margin: 0 auto;
@@ -402,14 +402,14 @@ ul {
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.reviews__item {
+.review-item {
 	font-weight: 700;
 	color: #2b2b2b;
 	margin: 10px 14px 30px 0;
 	display: flex;
 	width: 450px;
 }
-.reviews__img {
+.review-item__img {
 	width: 90px; height: 90px;
 	border-radius: 50%;
 	float: left;
@@ -417,10 +417,10 @@ ul {
 	position: relative;
 	top: -10px; left: 0;
 }
-.reviews__author {
+.review-item__author {
 	color: #757575;
 }
-.reviews__title {
+.review-item__title {
 	font-size: 16px;
 	color: #d91233;
 	margin: 16px 0;
