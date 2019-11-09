@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>BodyRepair - Продажа кузовных запчастей</title>
@@ -73,7 +73,7 @@
 	</div>
 </header>
 
-<section class="info">
+<section class="section info">
 	<div class="container">
 		 <ul class="info-list">
 		 	<li class="info-list__item">
@@ -125,7 +125,7 @@
 	</div>
 </section>
 
-<section class="request section_gray">
+<section class="section request section_gray">
 	<div class="container">
 		<h2 class="section-title">
 			Подробная заявка
@@ -134,11 +134,11 @@
 			Заполните форму и получите максимально точную цену!
 		</h3>
 		<form class="form request-form">
-			<label class="form__label">
+			<label class="form__label request__label">
 				<div class="form__descr">
 					Марка:
 				</div>
-				<select name="Марка" class="select request-form__select">
+			<select name="Марка" class="select request-form__select">
 				<option class="select__option request-form__option" hidden>Выберите марку</option>
 				<option class="select__option request-form__option" value="BMW">BMW</option>
 				<option class="select__option request-form__option" value="Mercedes-Bens">Mercedes-Bens</option>
@@ -146,7 +146,7 @@
 			</select>
 			</label>
 			
-			<label class="form__label">
+			<label class="form__label request__label">
 				<div class="form__descr">
 					Модель:
 				</div>
@@ -157,7 +157,7 @@
 					<option class="select__option request-form__option" value="AUDI">AUDI</option>
 				</select>
 			</label>
-			<label class="form__label">
+			<label class="form__label request__label">
 				<div class="form__descr">
 					Год выпуска:
 				</div>
@@ -168,36 +168,36 @@
 					<option class="select__option request-form__option" value="2010">2010</option>
 				</select>
 			</label>
-			<label class="form__label">
+			<label class="form__label request__label">
 				<div class="form__descr">
 					Необходимые детали:
 				</div>
 				<textarea class="textarea request-form__textarea" placeholder="Введите"></textarea>
 			</label>
-			<label class="form__label">
+			<label class="form__label request__label">
 				<div class="form__descr">
 					Ваше имя:
 				</div>
 				<input type="text" class="input request-form__input" placeholder="Введите">
 			</label>
-			<label class="form__label">
+			<label class="form__label request__label">
 				<div class="form__descr">
 					Ваш телефон:
 				</div>
 				<input type="text" class="input request-form__input request-form__input js-input__telephone" placeholder="+7 (9__) ___-__-__">
 			</label>
-			<label class="form__label">
+			<label class="form__label request__label">
 				<div class="form__descr">
 					Ваш e-mail:
 				</div>
 				<input type="text" class="input request-form__input" placeholder="Введите">
 			</label>
-			<button class="button" type="submit">Узнать цену</button>
+			<button class="button request-form__button" type="submit">Узнать цену</button>
 		</form>
 	</div>
 </section>
 
-<section class="brends">
+<section class="section brends">
 	<div class="container">
 		<h2 class="section-title">
 			Имеем в наличии детали на авто:
@@ -224,19 +224,18 @@
 	</div>
 </section>
 
-<section class="video">
+<section class="section video">
 	<div class="container">
 		<h2 class="section-title">
 			Вы можете посмотреть что происходит у нас!
 		</h2>
 		<div class="video__screen">
-			<!-- width="780" height="390"  -->
-			<iframe src="https://www.youtube.com/embed/kpCsB_zNM0E" frameborder="0" allow="accelerometer; auheaderlay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/kpCsB_zNM0E" allow="accelerometer; auheaderlay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
 		</div>
 	</div>
 </section>
 
-<section class="reviews section_gray">
+<section class="section reviews section_gray">
 	<div class="container">
 		<h2 class="section-title">
 			Клиенты о нас
@@ -244,33 +243,59 @@
 		<div class="reviews__inner">
 			<div class="reviews__item">
 				<img src="img/reviews/item1.jpg" alt="" class="reviews__img">
-				<div class="reviews__author">Иван Иванович</div>
-				<div class="reviews__title">Не могу найти фару для авто</div>
-				<span class="reviews__text">Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</span>
+				<div class="reviews__content">
+					<div class="reviews__author">
+						Ефим Герасимов
+					</div>
+					<div class="reviews__title">
+						Большое спасибо BodyRepair!
+					</div>
+					<div class="reviews__text">
+						Хочу выразить огромную благодарность,за заказ амортизатора на Reno 21! Пришел быстрее, чем ожидал. Отдельная благодарность менеджеру: перезвонил неоднократно. Амортизатор подошёл.
+					</div>
+				</div>
 			</div>
 			<div class="reviews__item">
 				<img src="img/reviews/item2.jpg" alt="" class="reviews__img">
-				<div class="reviews__author">Иван Иванович</div>
-				<div class="reviews__title">Не могу найти фару для авто</div>
-				<span class="reviews__text">Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</span>
+				<div class="reviews__content">
+					<div class="reviews__author">Роман Мендрин</div>
+					<div class="reviews__title">
+						Отличный магазин. Всем рекомендую!
+					</div>
+					<div class="reviews__text">
+						Заказал набор для ТО на свою ласточку. Фильтра, масло. Все было в наличии, менеджер перезвонил уточнил детали и на следующий день отправили. Получил на новой почте, платил картой приватбанка. Раньше заказывал без регистрации а сейчас зарегился. Пришло все что заказывал. Магазин рекомендую.
+					</div>
+				</div>
 			</div>
 			<div class="reviews__item">
 				<img src="img/reviews/item3.jpg" alt="" class="reviews__img">
-				<div class="reviews__author">Иван Иванович</div>
-				<div class="reviews__title">Не могу найти фару для авто</div>
-				<span class="reviews__text">Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</span>
+				<div class="reviews__content">
+					<div class="reviews__author">Алексей Игнатьев</div>
+					<div class="reviews__title">
+						Отличный магазин с оперативной доставкой!
+					</div>
+					<div class="reviews__text">
+						Получил посылку по почте России в течении 2-х дней цена и качество согласно заказа. Очень доволен! Отдельная благодарность менеджеру за корректное общение.
+					</div>
+				</div>
 			</div>
 			<div class="reviews__item">
 				<img src="img/reviews/item4.jpg" alt="" class="reviews__img">
-				<div class="reviews__author">Иван Иванович</div>
-				<div class="reviews__title">Не могу найти фару для авто</div>
-				<span class="reviews__text">Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</span>
+				<div class="reviews__content">
+					<div class="reviews__author">Борис Ефремов</div>
+					<div class="reviews__title">
+						Удобный интерфейс сайта, квалифицированные менеджеры!
+					</div>
+					<div class="reviews__text">
+						Заказывал много запчастей в течении 3 недель, так как на ремонте машины есть постоянно. Квалифицированные менеджеры, удобный интерфейс сайта очень порадовали. Запчасти поступили в срок, по наложному платежу. Магазин всегда информирует о состоянии заказа при помощи СМС, что удобно. Если и был возврат, то деньги перечислили в тот же день без проволочек и долгих объяснений почему не подошла запчасть. Рекомендую!
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="advice">
+<section class="section advice">
 	<div class="container">
 		<h2 class="section-title">
 			Нужна консультация?
@@ -281,20 +306,38 @@
 		<form class="form advice-form">
 			<label class="form__label">
 				<div class="form__descr">
-					Имя:
+					Ваше имя:
 				</div>
-				<input type="text" class="input" placeholder="Введите">
+				<input type="text" class="input advice-input" placeholder="Введите">
 			</label>
 			<label class="form__label">
 				<div class="form__descr">
-					Телефон:
+					Ваш телефон:
 				</div>
-				<input type="text" class="input js-input__telephone" placeholder="+7 (9__) ___-__-__">
+				<input type="text" class="input advice-input js-input__telephone" placeholder="+7 (9__) ___-__-__">
 			</label>
-			<button class="button">Заказать консультацию</button>
+			<button class="button">
+				Заказать консультацию
+			</button>
 		</form>
 	</div>
 </section>
+
+<!-- <section class="about">
+	<div class="map"></div>
+	<div class="contacts">
+		<div class="contacts__title">Контакты</div>
+		<div class="contacts__adress">
+			г. Москва, ул. Дорожная, 8, к.1
+		</div>
+		<a href="tel:88002323212" class="contacts__number">
+			8 800 232 32 12
+		</a>
+		<a href="mailto:bodyrepair-info@gmail.com" class="contacts__email">
+			bodyrepair-info@gmail.com
+		</a>
+	</div>
+</section> -->
 
 <footer class="footer">
 	<div class="container">
@@ -317,7 +360,12 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSa4nUCAA-lwnTB3HIzqSbqF2SCHhGgRc&callback=initMap"></script> -->
+
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/cusel-min-2.5.js"></script>
+
 <script src="js/main.js"></script>
 </body>
 </html>
