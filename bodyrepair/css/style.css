@@ -142,8 +142,8 @@ ul {
 	font-family: 'Lato', sans-serif;
 	padding: 15px 17px;
 	max-width: 240px;
-	outline: none;
 	width: 100%;
+	outline: none;
 	overflow: hidden;
 }
 
@@ -237,7 +237,6 @@ ul {
 .header-list {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	align-items: flex-end;
 	margin-bottom: 105px;
 }
@@ -308,6 +307,7 @@ ul {
 	justify-content: center;
 	display: flex;
 	flex-wrap: wrap;
+	padding-left: 0;
 }
 
 .info-list__item {
@@ -330,11 +330,12 @@ ul {
 	column-count: 3;
 }
 
-.request__label {
+.request-form__label {
 	margin-bottom: 20px;
 }
 
 .request-form__button {
+	max-width: 240px;
 	width: 100%;
 }
 
@@ -407,7 +408,8 @@ ul {
 	color: #2b2b2b;
 	margin: 10px 14px 30px 0;
 	display: flex;
-	width: 450px;
+	max-width: 450px;
+	width: 100%;
 }
 .review-item__img {
 	width: 90px; height: 90px;
@@ -440,12 +442,20 @@ ul {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin: 0 110px;
+	margin: 0 11.45833333333333%;
+}
+
+.advice-form__label {
+	margin-bottom: 40px;
 }
 
 .advice-input {
 	width: 290px;
-	margin: 0 20px 40px;
+}
+
+.advice-form__label +
+.advice-form__label {
+	margin-left: 20px;
 }
 
 
