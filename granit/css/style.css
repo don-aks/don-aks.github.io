@@ -39,16 +39,81 @@ button {
 
 
 
+/* ======= ELEMENTS ====== */
+
+/* === button ==== */
+.button-lnk {
+	display: inline-block;
+	background-color: #ffd200;
+	color: #000;
+	max-width: 180px;
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.button-lnk:hover {
+	background-color: #E1B400;
+	text-decoration: underline;
+	transition: .5s;
+}
+
+/* === section ==== */
+.section {
+	padding-bottom: 80px;
+}
+
+.section_gray {
+	background-color: #f4f4f4;
+}
+
+.section-title {
+	padding-top: 80px;
+	margin-bottom: 60px;
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* === list ==== */
+.list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.list__item {
+	border: 2px solid #f6f6f6;
+	text-align: center;
+}
+
+.list__item +
+.list__item {
+	margin-left: 20px;
+}
+
+
 
 /* ======= HEADER ======= */
 
-.header__inner {
-	padding-top: 30px;
-}
-
 .top-info {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+}
+
+.header__top-info {
+	margin-top: 30px;
 }
 
 .logo {
@@ -112,15 +177,9 @@ button {
 	padding: 13px 23px;
 }
 
-.header-phone-button {
-	color: #292929;
-}
-
 .header-menu {
 	position: relative;
 	top: 30px;
-	background-color: #fc0;
-	width: 100%;
 }
 
 .menu__ul {
@@ -129,30 +188,30 @@ button {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: center;
 }
 
 .menu__item {
-	max-width: 150px;
+	width: 100%;
 }
 
 .menu__link {
+	display: block;
 	font-size: 14px;
 	font-weight: 500;
 	background-color: #fc0;
-	width: 100%;
 	text-align: center;
 	padding: 26px 0;
 }
 
 .menu__link:hover {
-
+	background-color: #D8AD00;
+	transition: .5s;
 }
 
 
 
 
-/* ======= INFO ======= */
+/* ======= TOP ======= */
 
 .top {
 	background-image: url(../img/top/bg.jpg);
@@ -160,6 +219,7 @@ button {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	background-position: top;
 	font-size: 14px;
 	font-weight: 300;
 	padding-top: 170px;
@@ -179,11 +239,9 @@ button {
 	margin-bottom: 65px;
 }
 
-.top-actions__button-link {
-	background-color: #ffd200;
-	color: #000;
-	font-weight: 500;
-	padding: 20px 30px;
+.top-actions__button-lnk {
+	max-width: 200px;
+	width: 100%;
 }
 
 .actions__text {
@@ -199,13 +257,52 @@ button {
 
 /* ======= SHOWCASE-TOP ======= */
 
-.showcase-top__inner {
-	padding-bottom: 80px;
+.showcase-top-product {
+	padding: 35px;
+	color: #626262;
 }
 
-.section-title {
-	padding-top: 80px;
-	margin-bottom: 60px;
-	font-weight: 700;
-	font-size: 20px;
+.showcase-top-product__name {
+	font-size: 15px;
+	text-decoration: underline;
+	font-weight: 500;
+	margin: 30px 0 20px 0;
+	color: #292929;
+}
+
+.showcase-product__price {
+	margin: 30px 0;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.showcase-top-product__price {
+	color: #0f0f0f;
+}
+
+
+
+
+/* ======= ADVANTAGES ======= */
+
+.advantages-list__item {
+	border-color: #fff;
+	padding: 40px;
+	background-color: transparent;
+	cursor: pointer;
+	width: 100%;
+}
+
+.advantages-list__item:hover {
+	background-color: #fff;
+	box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.05);
+	transition: .5s;
+}
+
+.advantages-list__title {
+	font-weight: 500;
+}
+
+.advantages-list__descr {
+	font-weight: 400;
 }
