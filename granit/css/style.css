@@ -87,16 +87,36 @@ button {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .list__item {
 	border: 2px solid #f6f6f6;
 	text-align: center;
+	max-width: 31.25%;
 }
 
 .list__item +
 .list__item {
 	margin-left: 20px;
+}
+
+/* === stock ===*/
+.stock::before {
+	display: inline-block;
+	content: 'Акция';
+	text-transform: uppercase;
+  padding: 8px;
+  background-color: #f00;
+  color: #fff;
+  position: absolute;
+  top: 3%;
+  margin-left: 10px;
 }
 
 
@@ -262,7 +282,11 @@ button {
 	color: #626262;
 }
 
-.showcase-top-product__name {
+.showcase-product {
+	position: relative;
+}
+
+.showcase-product__name {
 	font-size: 15px;
 	text-decoration: underline;
 	font-weight: 500;
@@ -290,7 +314,6 @@ button {
 	padding: 40px;
 	background-color: transparent;
 	cursor: pointer;
-	width: 100%;
 }
 
 .advantages-list__item:hover {
@@ -305,4 +328,39 @@ button {
 
 .advantages-list__descr {
 	font-weight: 400;
+}
+
+
+
+
+/* ======= SHOWCASE-POPULAR ======= */
+
+.showcase-popular__inner {
+
+}
+.showcase-popular-product {
+	max-width: 25.52083333333333%;
+	padding: 20px 10px;
+}
+.showcase-popular-product__img-wrap {
+	position: relative;
+}
+.showcase-popular-product__name {
+	font-weight: 400;
+	font-size: 13px;
+	color: #292929;
+}
+.showcase-product__price-old {
+	display: inline-block;
+	font-size: 10px;
+	color: #979797;
+	text-decoration: line-through;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.showcase-product__price-new {
+	display: inline-block;
+	color: #f00;
+	font-weight: 500;
+	font-size: 16px;
 }
