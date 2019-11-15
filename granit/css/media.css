@@ -1,0 +1,32 @@
+@media (max-width: 665px) {
+	.top-info {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.logo {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 399px) {
+	.phone {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.phone-number {
+		margin-right: 0;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.phone-number__link {
+		text-align: left;
+	}
+}
