@@ -177,7 +177,7 @@ img {
 }
 
 .list__item_hover-effect {
-	transition: .5s;
+	transition: .5s background-color, box-shadow;
 }
 
 .list__item_hover-effect:hover {

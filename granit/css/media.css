@@ -1,3 +1,32 @@
+@media (max-width: 999px) {
+	.showcase-popular__inner {
+		justify-content: center;
+	}
+	.showcase-popular-product {
+		margin-bottom: 20px;
+	}
+	.showcase-popular-product:last-child {
+		margin-left: 0 !important;
+	}
+}
+
+@media (max-width: 823px) {
+	.list__item +
+	.list__item {
+		margin-left: 25px;
+	}
+	.showcase-top-product::last-child,
+	.advantages-list__item::last-child,
+	.services-list__item::last-child {
+		margin-left: 0;
+	}
+	.showcase-top-product,
+	.advantages-list__item,
+	.services-list__item {
+		margin-bottom: 20px;
+	}
+}
+
 @media (max-width: 768px) {
 	.menu {
 		position: unset;
@@ -76,6 +105,12 @@
 	}
 	.logo {
 		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 599px) {
+	.list__item {
+		max-width: none;
 	}
 }
 
