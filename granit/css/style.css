@@ -30,6 +30,10 @@ button {
 	cursor: pointer;
 }
 
+img {
+	max-width: 100%;
+}
+
 .container {
 	max-width: 960px;
 	margin: 0 auto;
@@ -118,12 +122,12 @@ button {
 	text-align: center;
 	font-weight: 500;
 	font-size: 12px;
+	transition: background-color .5s;
 }
 
 .button-lnk:hover {
 	background-color: #E1B400;
 	text-decoration: underline;
-	transition: .5s;
 }
 
 /* === section ==== */
@@ -172,6 +176,16 @@ button {
 	margin-left: 20px;
 }
 
+.list__item_hover-effect {
+	transition: .5s;
+}
+
+.list__item_hover-effect:hover {
+	cursor: pointer;
+	background-color: #fff;
+	box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.05);
+}
+
 /* === stock ===*/
 .stock::before {
 	display: inline-block;
@@ -217,11 +231,15 @@ button {
 	background-color: #fc0;
 	text-align: center;
 	padding: 26px 0;
+	transition: background-color .5s;
 }
 
 .menu__link:hover {
 	background-color: #D8AD00;
-	transition: .5s;
+}
+
+.menu__burger-wrapper {
+	display: none;
 }
 
 
@@ -235,7 +253,7 @@ button {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: top;
+	background-position: center;
 	font-size: 14px;
 	font-weight: 300;
 	padding-top: 170px;
@@ -266,11 +284,11 @@ button {
 
 .actions__link {
 	text-decoration: underline;
+	transition: background-color .5s;
 }
 
 .actions__link:hover {
 	background-color: rgba(255, 255, 255, .1);
-	transition: .5s;
 }
 
 
@@ -305,6 +323,11 @@ button {
 	color: #0f0f0f;
 }
 
+.showcase-product__img {
+	width: 100%;
+	max-height: 117px;
+}
+
 
 
 
@@ -315,12 +338,7 @@ button {
 	padding: 40px;
 	background-color: transparent;
 	cursor: pointer;
-}
-
-.advantages-list__item:hover {
-	background-color: #fff;
-	box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.05);
-	transition: .5s;
+	transition: background-color .5s;
 }
 
 .advantages-list__title {
