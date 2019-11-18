@@ -164,7 +164,7 @@
 	}
 }
 
-@media (max-width: 390px) {
+@media (max-width: 405px) {
 	.footer-phone {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
