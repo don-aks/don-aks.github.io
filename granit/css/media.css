@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 823px) {
+	.showcase-top-product {
+		padding: 20px;
+	}
 	.list__item +
 	.list__item {
 		margin-left: 25px;
@@ -44,9 +47,6 @@
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
-	  margin-left: auto;
-    margin-right: -0.1em;
-    margin-bottom: 10px;
 	}
 	.menu__burger::before,
 	.menu__burger,
@@ -59,7 +59,7 @@
 	  content: '';
 	  width: 30px;
 	  height: 5px;
-	  background-color: #fc0;
+	  background-color: #000;
 	  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 	}
 	.menu__burger::before {
@@ -95,43 +95,42 @@
 }
 
 @media (max-width: 665px) {
-	.top-info {
+	.footer__top-info {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
 		-ms-flex-direction: column;
 		-o-flex-direction: column;
 		flex-direction: column;
-		justify-content: center;
 	}
-	.logo {
+	.header__top-info {
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 10px;
+	}
+	.header-logo__descr,
+	.header-logo__name,
+	.header-phone-number {
+		display: none;
+	}
+	.header-logo {
+		display: inline-block;
+	}
+	.footer-logo {
 		margin-bottom: 20px;
+	}
+	.top {
+		padding-top: 30px;
+		padding-bottom: 100px;
+	}
+	.section-title {
+		padding-top: 50px;
+		margin-bottom: 30px;
 	}
 }
 
 @media (max-width: 599px) {
 	.list__item {
 		max-width: none;
-	}
-}
-
-@media (max-width: 399px) {
-	.phone {
-		-webkit-flex-direction: column;
-		-moz-flex-direction: column;
-		-ms-flex-direction: column;
-		-o-flex-direction: column;
-		flex-direction: column;
-	}
-	.phone-number {
-		margin-right: 0;
-		margin: 0 auto;
-		margin-bottom: 20px;
-	}
-	.phone-number__link {
-		text-align: center;
-	}
-	.logo__descr {
-		display: none;
 	}
 }
 
@@ -145,6 +144,23 @@
 	}
 	.top__descr {
 		margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 390px) {
+	.footer-phone {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.footer-phone__link {
+		text-align: center;
+	}
+	.footer-phone-number {
+		margin-right: 0;
+		margin-bottom: 20px;
 	}
 }
 
