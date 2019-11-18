@@ -38,6 +38,12 @@
 	.menu__ul {
 		display: none;
 	}
+	.menu__ul:first-child {
+		border-bottom: 1px solid rgba(0, 0, 0, .3);
+	}
+	.menu__link {
+		border-top: 1px solid rgba(0, 0, 0, .3);
+	}
 	.menu__burger-wrapper {
 		display: block;
 	  height: 30px;
@@ -108,8 +114,7 @@
 		margin-top: 10px;
 	}
 	.header-logo__descr,
-	.header-logo__name,
-	.header-phone-number {
+	.header-logo__name {
 		display: none;
 	}
 	.header-logo {
@@ -134,6 +139,15 @@
 	}
 }
 
+@media (max-width: 520px) {
+	.header-phone__descr {
+		display: none;
+	}
+	.header-phone-number {
+		margin-right: 10px;
+	}
+}
+
 @media (max-width: 429px) {
 	.actions__button-lnk {
 		display: block;
@@ -144,6 +158,9 @@
 	}
 	.top__descr {
 		margin-bottom: 35px;
+	}
+	.header-phone-number {
+		display: none;
 	}
 }
 
