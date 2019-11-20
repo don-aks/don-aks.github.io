@@ -8,8 +8,25 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/magnific-popup.min.css">
+	<style>
+		.popup {
+			position: relative;
+			background: #FFF;
+			width: 500px;
+			margin: 0 auto;
+			min-height: 300px;
+			padding: 20px;
+			transition: all 0.2s ease-in-out;
+		}
+	</style>
 </head>
 <body>
+<div class="popup-wrap">
+	<div class="mfp-hide popup" id="popup-test">
+		<p>content popup</p>
+	</div>
+</div>
 <header class="header">
 	<div class="blackout">
 		<div class="container">
@@ -18,8 +35,8 @@
 					<img src="img/logo/white.png" alt="Логотип">
 				</a>
 				<div class="call header-call">
-					<a href="tel:88002323212" class="call__number header-call__number">8 800 232 32 12</a>
-					<a href="#" class="call__request header-call__request">
+					<a href="tel:88002323212" class="call__number header-call__number" data-effect="mfp-zoom-in">8 800 232 32 12</a>
+					<a href="#popup-test" class="call__request header-call__request popup-link">
 						Заказать обратный звонок
 					</a>
 				</div>
@@ -61,7 +78,7 @@
 						</div>
 					</div>
 					<div class="header__buttons">
-						<button class="button button_transparent header__button">
+						<button class="button button_transparent header__button popup-link" data-mfp-src="#popup-test">
 							Подробная заявка
 						</button>
 						<div class="header-buttons__descr">
@@ -362,11 +379,10 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <!-- <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSa4nUCAA-lwnTB3HIzqSbqF2SCHhGgRc&callback=initMap"></script> -->
-
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/cusel-min-2.5.js"></script>
 
 <script src="js/main.js"></script>
 </body>
