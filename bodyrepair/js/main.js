@@ -2,12 +2,12 @@ $(function(){
 	$(".js-input__telephone").mask("+7 (9nn) nnn-nn-nn");
 	$('.popup-link').magnificPopup({
 		type: 'inline',
-		midClick: true,
-		mainClass: 'mfp-with-zoom',
-	  zoom: {
-	    enabled: true,
-	    duration: 300,
-	    easing: 'ease-in-out'
-		}
+		removalDelay: 500,
+		mainClass: 'mfp-zoom-in'
+	});
+	$(".js-button-scroll").on("click", function (event) {
+		var id  = $(this).attr('href'),
+		    anchor = $(id).offset().top;
+		$('body,html').animate({scrollTop: anchor}, 1000);
 	});
 });

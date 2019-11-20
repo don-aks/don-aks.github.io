@@ -11,11 +11,6 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-<div class="popup-wrap">
-	<div class="mfp-hide popup" id="popup-test">
-		<p>content popup</p>
-	</div>
-</div>
 <header class="header">
 	<div class="blackout">
 		<div class="container">
@@ -24,8 +19,8 @@
 					<img src="img/logo/white.png" alt="Логотип">
 				</a>
 				<div class="call header-call">
-					<a href="tel:88002323212" class="call__number header-call__number" data-effect="mfp-zoom-in">8 800 232 32 12</a>
-					<a href="#popup-test" class="call__request header-call__request popup-link">
+					<a href="tel:88002323212" class="call__number header-call__number">8 800 232 32 12</a>
+					<a href="#popup-call" class="call__request header-call__request popup-link">
 						Заказать обратный звонок
 					</a>
 				</div>
@@ -59,7 +54,7 @@
 				</ul>
 				<div class="header-buttons">
 					<div class="header__buttons">
-						<button class="button header__button">
+						<button class="button header__button popup-link" data-mfp-src="#popup-fast-request">
 							Быстрая заявка
 						</button>
 						<div class="header-buttons__descr">
@@ -67,7 +62,7 @@
 						</div>
 					</div>
 					<div class="header__buttons">
-						<button class="button button_transparent header__button popup-link" data-mfp-src="#popup-test">
+						<button class="button button_transparent header__button js-button-scroll" href="#section-request">
 							Подробная заявка
 						</button>
 						<div class="header-buttons__descr">
@@ -132,7 +127,7 @@
 	</div>
 </section>
 
-<section class="section request section_gray">
+<section class="section request section_gray" id="section-request">
 	<div class="container">
 		<h2 class="section-title">
 			Подробная заявка
@@ -200,7 +195,7 @@
 				</div>
 				<input type="text" class="input request-form__input" placeholder="Введите">
 			</label>
-			<button class="button request-form__button" type="submit">Узнать цену</button>
+			<button class="button request-form__button popup-link" type="submit" data-mfp-src="#popup-thank">Узнать цену</button>
 		</form>
 	</div>
 </section>
@@ -324,7 +319,7 @@
 				</div>
 				<input type="text" class="input advice-input js-input__telephone" placeholder="+7 (9__) ___-__-__">
 			</label>
-			<button class="button">
+			<button class="button popup-link" data-mfp-src="#popup-thank">
 				Заказать консультацию
 			</button>
 		</form>
@@ -366,6 +361,66 @@
 		</div>
 	</div>
 </footer>
+
+<!-- POPUPS WINDOWS -->
+<div class="popup mfp-with-anim mfp-hide" id="popup-thank">
+	<div class="popup__container">
+		<div class="popup__title">
+			Спасибо за вашу заявку!
+		</div>
+		<div class="popup__descr">
+			Мы свяжемся с Вами в ближайшее время!
+		</div>
+	</div>
+</div>
+
+<div class="popup mfp-with-anim mfp-hide" id="popup-call">
+	<div class="popup__container">
+		<div class="popup__title">
+			Заказ обратного звонка
+		</div>
+		<div class="popup__descr">
+			Оставьте заявку и мы Вам перезвоним!
+		</div>
+		<form class="popup__form">
+			<label class="input-with-icon input-with-icon__person">
+				<input type="text" class="popup__input" placeholder="Ваше имя">
+			</label>
+			<label class="input-with-icon input-with-icon__telephone">
+				<input type="text" class="popup__input js-input__telephone" placeholder="Ваш телефон">
+			</label>
+			<button class="button popup__button popup-link" type="submit" data-mfp-src="#popup-thank">
+				Отправить заявку
+			</button>
+		</form>
+	</div>
+</div>
+
+<div class="popup mfp-with-anim mfp-hide" id="popup-fast-request">
+	<div class="popup__container">
+		<div class="popup__title">
+			Быстрая заявка
+		</div>
+		<div class="popup__descr">
+			Оставьте заявку и мы Вам перезвоним!
+		</div>
+		<form class="popup__form">
+			<label class="input-with-icon input-with-icon__person">
+				<input type="text" class="popup__input" placeholder="Ваше имя">
+			</label>
+			<label class="input-with-icon input-with-icon__telephone">
+				<input type="text" class="popup__input js-input__telephone" placeholder="Ваш телефон">
+			</label>
+			<label class="input-with-icon input-with-icon__mail">
+				<input type="text" class="popup__input input-with-icon input-with-icon__mail" placeholder="Ваша почта">
+			</label>
+			<button class="button popup__button popup-link" type="submit" data-mfp-src="#popup-thank">
+				Отправить заявку
+			</button>
+		</form>
+	</div>
+</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>

@@ -6,5 +6,10 @@
 @font-face {
 	font-family: "Lato";
 	font-weight: 700;
-	src: url(../fonts/Lato-Bold.ttff);
+	src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+	font-family: Icons;
+	src: url(../fonts/Fontello.ttf)
 }

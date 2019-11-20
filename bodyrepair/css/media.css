@@ -170,4 +170,10 @@
 	.header-call {
 		display: none;
 	}
+	.popup {
+		width: 100%;
+	}
+	.popup__container {
+		width: 85%;
+	}
 }

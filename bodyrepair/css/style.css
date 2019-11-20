@@ -171,6 +171,34 @@ ul {
 	transition: .3s;
 }
 
+/* -- input-with-icon -- */
+.input-with-icon {
+	position: relative;
+}
+.input-with-icon input {
+	padding-right: 35px;
+}
+.input-with-icon__person::before,
+.input-with-icon__telephone::before,
+.input-with-icon__mail::before {
+	position: absolute;
+	font-family: Icons;
+	color: #CFCFCF;
+	top: -3px;
+	right: 10px;
+	z-index: 1;
+	font-size: 16px;
+}
+.input-with-icon__person::before {
+	content: '\f062';
+}
+.input-with-icon__telephone::before {
+	content: '\e801';
+}
+.input-with-icon__mail::before {
+	content: '\e800';
+}
+
 
 
 
@@ -519,11 +547,54 @@ ul {
 /* ======= POPUP ======= */
 
 .popup {
-	position: relative;
 	background: #FFF;
-	width: 500px;
+	width: 320px;
 	margin: 0 auto;
-	min-height: 300px;
-	padding: 20px;
 	transition: all 0.2s ease-in-out;
+	color: #151515;
+}
+
+.popup__container {
+	width: 240px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 0;
+}
+
+.popup__title {
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.popup__descr {
+	font-size: 14px;
+	margin-bottom: 18px;
+}
+
+.popup__button {
+	font-size: 16px;
+	margin-top: 5px;
+	width: 100%;
+}
+
+.popup__input {
+	width: 100%;
+	padding: 15px;
+	border: #d0d0d0 solid 1px;
+	outline: none;
+	overflow: hidden;
+}
+
+.popup__input {
+	margin-bottom: 10px;
+	transition: .25s;
+}
+
+.popup__input:focus {
+	border-color: #000;
+}
+
+.popup__input::placeholder {
+	color: #676767;
 }
