@@ -18,9 +18,9 @@
 	.list__item {
 		margin-left: 25px;
 	}
-	.showcase-top-product::last-child,
-	.advantages-list__item::last-child,
-	.services-list__item::last-child {
+	.showcase-top-product:last-child,
+	.advantages-list__item:last-child,
+	.services-list__item:last-child {
 		margin-left: 0;
 	}
 	.showcase-top-product,
@@ -30,17 +30,17 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 	.menu {
-		position: unset;
+		top: 0;
 		margin: 20px 0;
 	}
 	.menu__ul {
 		display: none;
 	}
-	.menu__ul:first-child {
+	/*.menu__ul:first-child {
 		border-bottom: 1px solid rgba(0, 0, 0, .3);
-	}
+	}*/
 	.menu__link {
 		border-top: 1px solid rgba(0, 0, 0, .3);
 	}
@@ -181,7 +181,7 @@
 	}
 }
 
-@media (min-width: 768px){
+@media (min-width: 770px){
 	.menu__ul {
 		display: flex !important;
 	}
