@@ -1,4 +1,5 @@
-@import url(fonts.min.css);
+@import url(fonts.css);
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
