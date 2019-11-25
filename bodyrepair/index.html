@@ -62,7 +62,7 @@
 						</div>
 					</div>
 					<div class="header__buttons">
-						<button class="button button_transparent header__button js-button-scroll" href="#section-request">
+						<button class="button button_transparent header__button js-button-scroll" data-anchor="#section-request">
 							Подробная заявка
 						</button>
 						<div class="header-buttons__descr">
@@ -136,66 +136,71 @@
 			Заполните форму и получите максимально точную цену!
 		</h3>
 		<form class="form request-form">
-			<label class="form__label request-form__label">
-				<div class="form__descr">
-					Марка:
-				</div>
-			<select name="Марка" class="select request-form__select">
-				<option class="select__option request-form__option" hidden>Выберите марку</option>
-				<option class="select__option request-form__option" value="BMW">BMW</option>
-				<option class="select__option request-form__option" value="Mercedes-Benz">Mercedes-Benz</option>
-				<option class="select__option request-form__option" value="AUDI">AUDI</option>
-				<option class="select__option request-form__option" value="Mustang">Mustang</option>
-			</select>
-			</label>
-			
-			<label class="form__label request-form__label">
-				<div class="form__descr">
-					Модель:
-				</div>
-				<select name="Модель" class="select request-form__select">
-					<option class="select__option request-form__option" hidden>Выберите модель</option>
+			<div class="request-form__collumn">
+				<label class="form__label request-form__label form__label-select">
+					<span class="form__descr">
+						Марка:
+					</span>
+				<select name="Марка" class="select request-form__select">
+					<option class="select__option request-form__option" hidden>Выберите марку</option>
 					<option class="select__option request-form__option" value="BMW">BMW</option>
 					<option class="select__option request-form__option" value="Mercedes-Benz">Mercedes-Benz</option>
 					<option class="select__option request-form__option" value="AUDI">AUDI</option>
+					<option class="select__option request-form__option" value="Mustang">Mustang</option>
 				</select>
-			</label>
-			<label class="form__label request-form__label">
-				<div class="form__descr">
-					Год выпуска:
-				</div>
-				<select name="Год выпуска" class="select request-form__select">
-					<option class="select__option request-form__option" hidden>Выберите год</option>
-					<option class="select__option request-form__option" value="2008">2008</option>
-					<option class="select__option request-form__option" value="2009">2009</option>
-					<option class="select__option request-form__option" value="2010">2010</option>
-				</select>
-			</label>
-			<label class="form__label request-form__label">
-				<div class="form__descr">
-					Необходимые детали:
-				</div>
-				<textarea class="textarea request-form__textarea" placeholder="Введите"></textarea>
-			</label>
-			<label class="form__label request-form__label">
-				<div class="form__descr">
-					Ваше имя:
-				</div>
-				<input type="text" class="input request-form__input" placeholder="Введите">
-			</label>
-			<label class="form__label request-form__label">
-				<div class="form__descr">
-					Ваш телефон:
-				</div>
-				<input type="text" class="input request-form__input request-form__input js-input__telephone" placeholder="+7 (9__) ___-__-__">
-			</label>
-			<label class="form__label request-form__label">
-				<div class="form__descr">
-					Ваш e-mail:
-				</div>
-				<input type="text" class="input request-form__input" placeholder="Введите">
-			</label>
-			<button class="button request-form__button popup-link" type="submit" data-mfp-src="#popup-thank">Узнать цену</button>
+				</label>
+				<label class="form__label request-form__label form__label-select">
+					<span class="form__descr">
+						Модель:
+					</span>
+					<select name="Модель" class="select request-form__select">
+						<option class="select__option request-form__option" hidden>Выберите модель</option>
+						<option class="select__option request-form__option" value="BMW">BMW</option>
+						<option class="select__option request-form__option" value="Mercedes-Benz">Mercedes-Benz</option>
+						<option class="select__option request-form__option" value="AUDI">AUDI</option>
+					</select>
+				</label>
+				<label class="form__label request-form__label form__label-select">
+					<span class="form__descr">
+						Год выпуска:
+					</span>
+					<select name="Год выпуска" class="select request-form__select">
+						<option class="select__option request-form__option" hidden>Выберите год</option>
+						<option class="select__option request-form__option" value="2008">2008</option>
+						<option class="select__option request-form__option" value="2009">2009</option>
+						<option class="select__option request-form__option" value="2010">2010</option>
+					</select>
+				</label>
+			</div>
+			<div class="request-form__collumn">
+				<label class="form__label request-form__label">
+					<span class="form__descr">
+						Необходимые детали:
+					</span>
+					<textarea class="textarea request-form__textarea" placeholder="Введите"></textarea>
+				</label>
+				<label class="form__label request-form__label">
+					<span class="form__descr">
+						Ваше имя:
+					</span>
+					<input type="text" class="input request-form__input" placeholder="Введите">
+				</label>
+			</div>
+			<div class="request-form__collumn">
+				<label class="form__label request-form__label">
+					<span class="form__descr">
+						Ваш телефон:
+					</span>
+					<input type="text" class="input request-form__input request-form__input js-input__telephone" placeholder="+7 (9__) ___-__-__">
+				</label>
+				<label class="form__label request-form__label">
+					<span class="form__descr">
+						Ваш e-mail:
+					</span>
+					<input type="text" class="input request-form__input" placeholder="Введите">
+				</label>
+				<button class="button request-form__button popup-link" type="submit" data-mfp-src="#popup-thank">Узнать цену</button>
+			</div>
 		</form>
 	</div>
 </section>
@@ -308,39 +313,23 @@
 		</h3>
 		<form class="form advice-form">
 			<label class="form__label advice-form__label">
-				<div class="form__descr">
+				<span class="form__descr">
 					Ваше имя:
-				</div>
+				</span>
 				<input type="text" class="input advice-input" placeholder="Введите">
 			</label>
 			<label class="form__label advice-form__label">
-				<div class="form__descr">
+				<span class="form__descr">
 					Ваш телефон:
-				</div>
+				</span>
 				<input type="text" class="input advice-input js-input__telephone" placeholder="+7 (9__) ___-__-__">
 			</label>
-			<button class="button popup-link" data-mfp-src="#popup-thank">
+			<button class="button advice-form__button popup-link" data-mfp-src="#popup-thank">
 				Заказать консультацию
 			</button>
 		</form>
 	</div>
 </section>
-
-<!-- <section class="about">
-	<div class="map"></div>
-	<div class="contacts">
-		<div class="contacts__title">Контакты</div>
-		<div class="contacts__adress">
-			г. Москва, ул. Дорожная, 8, к.1
-		</div>
-		<a href="tel:88002323212" class="contacts__number">
-			8 800 232 32 12
-		</a>
-		<a href="mailto:bodyrepair-info@gmail.com" class="contacts__email">
-			bodyrepair-info@gmail.com
-		</a>
-	</div>
-</section> -->
 
 <footer class="footer">
 	<div class="container">
@@ -353,7 +342,7 @@
 					<a href="tel:88002323212" class="call__number footer-call__number">8 800 232 32 12</a>
 				</div>
 				<div class="call__request-box">
-					<a href="#popup-call" class="call__request footer-call__request">
+					<a href="#popup-call" class="call__request footer-call__request popup-link">
 						Заказать обратный звонок
 					</a>
 				</div>
@@ -425,8 +414,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-<!-- <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSa4nUCAA-lwnTB3HIzqSbqF2SCHhGgRc&callback=initMap"></script> -->
 
 <script src="js/main.js"></script>
 </body>

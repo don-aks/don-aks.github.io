@@ -1,7 +1,24 @@
-/* Делать до w320 (iphone 5) */
 @media (max-width: 973px) {
 	.review-item {
 		max-width: 100vw;
+	}
+}
+
+@media (max-width: 900px) {
+	.request-form__collumn {
+		margin: 4px;
+		width: 47%;
+	}
+	.request-form__collumn:last-child {
+		margin: 0 auto;
+    margin-top: 15px;
+	}
+	.request-form__label {
+		width: 100%;
+	}
+	.request-form__button {
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -25,6 +42,9 @@
 	.advice-input {
 		max-width: 100vw;
 		width: 100%;
+	}
+	.request-form__collumn {
+		margin: 0;
 	}
 }
 
@@ -61,6 +81,23 @@
 	}
 }
 
+@media (max-width: 655px) {
+	.request-form__collumn:last-child {
+		margin: 0;
+	}
+	.request-form {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		padding: 20px;
+	}
+	.request-form__collumn {
+		width: 100%;
+	}
+}
+
 @media (max-width: 641px) {
 	.header-list__item +
 	.header-list__item {
@@ -78,8 +115,7 @@
 
 @media (max-width: 625px) {
 	.info-list__item {
-		max-width: 100vw;
-		width: 100vw;
+		max-width: none;
 	}
 }
 
@@ -113,13 +149,6 @@
 	.request-form {
 		display: flex;
 		flex-direction: column;
-	}
-	.input, 
-	.textarea, 
-	.select, 
-	.select__option,
-	.button {
-		max-width: 100vw;
 	}
 }
 
