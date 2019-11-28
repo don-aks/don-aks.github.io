@@ -135,7 +135,6 @@ img {
 	max-width: 180px;
 	padding: 20px 0;
 	width: 100%;
-	margin: 0 auto;
 	text-align: center;
 	font-weight: 500;
 	font-size: 12px;
@@ -183,7 +182,6 @@ img {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	align-items: center;
 }
 
 .list__item {
@@ -332,7 +330,6 @@ img {
 }
 
 .showcase-product {
-	position: relative;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -348,6 +345,7 @@ img {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	align-items: center;
 }
 
 .showcase-product__name {
