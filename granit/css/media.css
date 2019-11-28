@@ -1,36 +1,31 @@
-@media (max-width: 999px) {
-	.showcase-popular__inner {
-		justify-content: center;
-	}
-	.showcase-popular-product {
-		margin-bottom: 20px;
-	}
-	.showcase-popular-product:last-child {
-		margin-left: 0 !important;
-	}
-}
-
-@media (max-width: 823px) {
-	.showcase-top-product {
-		padding: 20px;
+@media (max-width: 977px) {
+	.list {
+		justify-content: space-around;
 	}
 	.list__item +
 	.list__item {
-		margin-left: 25px;
-	}
-	.showcase-top-product:last-child,
-	.advantages-list__item:last-child,
-	.services-list__item:last-child {
 		margin-left: 0;
 	}
-	.showcase-top-product,
-	.advantages-list__item,
-	.services-list__item {
-		margin-bottom: 20px;
+	.list__item {
+		margin: 0 7px 20px;
+	}
+	.section {
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 916px) {
+	.list__item {
+		margin: 0;
+    margin-bottom: 20px;
+	}
+	.showcase-top-product {
+		padding: 20px;
 	}
 }
 
 @media (max-width: 769px) {
+	/* === BURGER === */
 	.menu {
 		top: 0;
 		margin: 20px 0;
@@ -38,9 +33,9 @@
 	.menu__ul {
 		display: none;
 	}
-	/*.menu__ul:first-child {
+	.menu__ul:last-child {
 		border-bottom: 1px solid rgba(0, 0, 0, .3);
-	}*/
+	}
 	.menu__link {
 		border-top: 1px solid rgba(0, 0, 0, .3);
 	}
@@ -85,19 +80,7 @@
 	  transform: rotate(45deg);
 	  top: 0;
 	}
-
-	.list {
-		justify-content: center;
-	}
-	.list__item {
-		max-width: 50vw;
-		width: 100%;
-	}
-	.list__item + 
-	.list__item {
-		margin: 0;
-		margin-top: 20px;
-	}
+	/* === //BURGER ====*/
 }
 
 @media (max-width: 665px) {
@@ -133,12 +116,6 @@
 	}
 }
 
-@media (max-width: 599px) {
-	.list__item {
-		max-width: none;
-	}
-}
-
 @media (max-width: 520px) {
 	.header-phone__descr {
 		display: none;
@@ -148,9 +125,20 @@
 	}
 }
 
+@media (max-width: 500px) {
+	.showcase-popular__inner {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
 @media (max-width: 450px) {
 	.actions__button-lnk {
 		display: block;
+		margin: 0;
 		margin-bottom: 10px;
 	}
 	.actions__text {
