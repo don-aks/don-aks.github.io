@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Friends Family - Ателье одинаковой одежды для мам и дочек</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<style>
+		.section {
+			height: 100vh;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<div id="fullpage">
+<section class="section">
+	<h1>lorem</h1>
+</section>
+<section class="section">
+	<h1>lorem</h1>
+</section>
+<section class="section">
+	<h1>lorem</h1>
+</section>
+<section class="section">
+	<h1>lorem</h1>
+</section>
+<section class="section">
+	<h1>lorem</h1>
+</section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Поблочная прокрутка -->
+<script src="js/fullpage/jquery.easings.min.js"></script>
+<script src="js/fullpage/jquery.fullPage.min.js"></script>
+<script src="js/fullpage/scrolloverflow.min.js"></script>
+<link rel="stylesheet" href="css/jquery.fullPage.min.css">
+<script src="js/main.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+			autoScrolling: true,
+			scrollHorizontally: true
+		});
+	});
+</script>
+</body>
+</html>
