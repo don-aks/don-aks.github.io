@@ -8,7 +8,7 @@ $color-second: #ff4d87; 	// logo
 $color-lighter: #ff5b97; 	// заголовки
 $color-text: #333333;
 // fonts
-$font-main: 'Proxima Nova';//, sans-serif;
+$font-main: 'Proxima Nova', sans-serif;
 $font-cursive: "Corinthia", serif;
 @mixin font-main {
 	font-family: $font-main;
@@ -43,6 +43,25 @@ body {
 
 .section {
 	padding-top: 82px;
+	&-title {
+		text-align: center;
+		font-weight: 600;
+		font-size: 30px;
+		margin-bottom: 95px;
+	}
+	&-subtitle {
+		text-align: center;
+		font-size: 14px;
+		max-width: 190px;
+		margin: 0 auto;
+		font-style: italic;
+		margin-top: -62px;
+		margin-bottom: 50px;
+	}
+	&__btn-move-down {
+		margin-right: 0;
+		margin-left: auto;
+	}
 }
 
 .logo {
@@ -76,6 +95,102 @@ body {
 			color: lighten($color-text, 10%);
 		}
 	}
+	&_colored {
+		background: #FF2462 linear-gradient( 65deg, #FFA3BD 0%, #FF2462 0%, #FF4D87 100%);
+		color: #fff;
+		padding: 0;
+		height: 60px;
+	}
+
+
+	&-move-down {
+		width: auto;
+		padding: 0;
+		color: #000;
+		opacity: .2;
+		margin-top: 3em;
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 16px;
+			height: 9px;
+			margin-left: 5px;
+			background: url(../img/btn-move-down/right-arrow.svg) no-repeat;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.Прямоугольник_2_копия {
+  background-image: -moz-linear-gradient( 65deg, rgb(255,163,189) 0%, rgb(225,36,98) 0%, rgb(255,77,135) 100%);
+  background-image: -webkit-linear-gradient( 65deg, rgb(255,163,189) 0%, rgb(225,36,98) 0%, rgb(255,77,135) 100%);
+  background-image: -ms-linear-gradient( 65deg, rgb(255,163,189) 0%, rgb(225,36,98) 0%, rgb(255,77,135) 100%);
+  position: absolute;
+  left: 375px;
+  top: 6014px;
+  width: 200px;
+  height: 60px;
+  z-index: 18;
+}
+
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	&-item {
+		width: 33.33333333%;
+		margin-bottom: 50px;
+		&__inner {
+			max-width: 160px;
+			text-align: center;
+			margin: 0 auto;
+		}
+		&__title {
+			font-weight: 600;
+			margin-top: 35px;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.row-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&-right {
+		flex-direction: row-reverse;
+	}
+
+	&__body {
+		padding: 0 15px;
+		&-right {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			text-align: right;
+		}
+	}
+
+	&__img {
+		width: 55%;
+	}
+}
+
+.input {
+	display: block;
+	border: none;
+	outline: none;
+	background: transparent;
 }
 
 
@@ -112,15 +227,15 @@ body {
 		transition: .5s;
 		border-bottom: 1px solid transparent;
 		&:hover {
-			color: lighten($color-text, 20%);
+			color: saturate($color-text, 20%);
 			padding-bottom: 5px;
-			border-bottom: 1px solid lighten($color-text, 20%);
+			border-bottom: 1px solid saturate($color-text, 20%);
 		}
 		&_active {
 			color: $color-main;
 			&:hover {
-				color: lighten($color-main, 20%);
-				border-color: lighten($color-main, 20%);
+				color: saturate($color-main, 20%);
+				border-color: saturate($color-main, 20%);
 			}
 		}
 	}
@@ -131,20 +246,28 @@ body {
 
 //////// INFO ////////
 .info {
-	&__inner {
-		display: flex;
-	}
 	&__title {
 		font-weight: 600;
 		font-size: 45px;
+		max-width: 440px;
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 30px;
+		margin-bottom: 100px;
+		max-width: 430px;
 	}
 	&__feature {
-		font-family: "Corinthia";
+		font-family: $font-cursive;
 		font-weight: 400;
 		font-style: normal;
 		color: $color-lighter;
 		font-size: 44px;
 		margin: 55px 0;
+		&-title {
+			margin: 0;
+			margin-bottom: 30px;
+		}
 	}
 	&__text {
 		font-size: 16px;
@@ -152,8 +275,68 @@ body {
 		font-family: "Proxima Nova";
 		font-weight: 300;
 		font-style: normal;
+		max-width: 320px;
+	}
+}
+
+
+
+
+//////// BOX ////////
+
+.box {
+	&-item {
+		margin-bottom: 80px;
+		&__title {
+			font-weight: 600;
+			margin: 25px 0;
+		}
+	}
+	&-items-right {
+		text-align: right;
+	}
+}
+
+
+
+
+//////// MAP ////////
+
+.map {
+	&__map-wrap {
+		width: 100%;
 	}
 	&__img {
-		width: 55%;
+		width: 100%;
+	}
+}
+
+
+
+
+//////// CONTACT ////////
+
+.contact {
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&-form {
+		&__input {
+			padding: 20px 10px;
+			width: 200px;
+			border-bottom: #ddd solid 2px;
+			color: #222;
+			margin-bottom: 15px;
+			&::placeholder {
+				color: #868686;
+				font-size: 12px;
+			}
+		}
+		&__input-file {
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
 	}
 }
