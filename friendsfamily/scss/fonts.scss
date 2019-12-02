@@ -2,13 +2,13 @@
 	font-family: "Proxima Nova";
 	font-weight: 300;
 	font-style: normal;
-	src: 	local(ProximaNovaLg)
+	src: 	local(ProximaNovaLg),
 				local(Proxima Nova Light),
 			 	local(ProximaNova-Light),
-				url('..fonts/ProximaNovaCond-Light.woff2') format('woff2'), 
-				url('..fonts/ProximaNovaCond-Light.woff') format('woff'),
-				url('..fonts/ProximaNovaCond-Light.ttf') format('ttf'),
-				url('..fonts/ProximaNovaCond-Light.eot') format('eot');
+				url('../fonts/ProximaNovaCond-Light.woff2') format('woff2'), 
+				url('../fonts/ProximaNovaCond-Light.woff') format('woff'),
+				url('../fonts/ProximaNovaCond-Light.ttf') format('ttf'),
+				url('../fonts/ProximaNovaCond-Light.eot') format('eot');
 	font-display: swap;
 }
 
@@ -16,8 +16,8 @@
 	font-family: "Proxima Nova";
 	font-weight: 600;
 	font-style: normal;
-	src: 	local(Lato Bold),
-			 	local(Lato-Bold),
+	src: 	local(ProximaNova Semibold),
+			 	local(ProximaNova-Semibold),
 				url('../fonts/ProximaNovaCond-Semibold.woff2') format('woff2'), 
 				url('../fonts/ProximaNovaCond-Semibold.woff') format('woff'),
 				url('../fonts/ProximaNovaCond-Semibold.ttf') format('ttf'),
@@ -36,5 +36,17 @@
 				url('../fonts/ProximaNovaCond-LightIt.woff') format('woff'),
 				url('../fonts/ProximaNovaCond-LightIt.ttf') format('ttf'),
 				url('../fonts/ProximaNovaCond-LightIt.eot') format('eot');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Corinthia";
+	font-weight: 400;
+	font-style: normal;
+	src: 	local(Corinthia),
+				url('../fonts/Corinthia.woff2') format('woff2'), 
+				url('../fonts/Corinthia.woff') format('woff'),
+				url('../fonts/Corinthia.ttf') format('ttf'),
+				url('../fonts/Corinthia.eot') format('eot');
 	font-display: swap;
 }
