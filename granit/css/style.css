@@ -57,6 +57,7 @@ img {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	border-radius: 50%;
+	align-items: center;
 }
 
 .header__top-info {
