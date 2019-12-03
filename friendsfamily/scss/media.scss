@@ -1,0 +1,22 @@
+@media (max-width: 845px) {
+	.logo__name {
+		display: none;
+	}
+}
+
+@media (max-width: 670px) {
+	.menu-ul__item +
+	.menu-ul__item {
+		margin-left: 70px;
+	}
+}
+
+@media (max-width: 600px) {
+	// BURGER
+	// https://codepen.io/webcademy/pen/BaaNwJy
+	// container:
+		// 15x13?
+	// item
+		// 15x1
+		// margin: 5px
+}
