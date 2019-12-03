@@ -259,8 +259,11 @@
 			<form class="contact-form">
 				<input type="text" class="input contact-form__input" placeholder="Ваше имя">
 				<input type="text" class="input contact-form__input js-input__telephone" placeholder="Ваш телефон">
-				<input type="file" class="contact-form__input-file">
-				<button class="btn btn_colored contact-form__btn">
+				<label class="input-file__label contact-form__input-file-label js-input-file-label">
+					<input type="file" class="input-file contact-form__input-file js-input-file" data-multiple-caption="Прикреплено {count} файла" multiple>
+					<span>Прикрепить файл</span>
+				</label>
+				<button type="submit" class="btn btn_colored contact-form__btn">
 					Оставить заявку
 				</button>
 			</form>
@@ -274,6 +277,7 @@
 
 <script src="js/jquery.fullPage.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.custom-file-input.min.js"></script>
 
 <script src="js/main.min.js"></script>
 </html>
