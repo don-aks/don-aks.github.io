@@ -102,7 +102,10 @@ body {
 		color: #fff;
 		padding: 0;
 		height: 60px;
+
 		// start hover effect
+		// smooth gradient change
+			// (плавная смена градиента)
 		position: relative;
 		z-index: 1;
 		&::before {
