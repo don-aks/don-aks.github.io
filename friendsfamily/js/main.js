@@ -5,6 +5,10 @@ $(document).ready(function() {
 		sectionSelector: '.js-section',
 		anchors:['info1', 'info2', 'info3', 'scheme', 'box', 'map', 'contact-page']
 	});
+	$('.burger-wrap').on('click', function() {
+		$('.burger').toggleClass('burger_active');
+		$('.menu-ul').slideToggle();
+	})
 	$(".js-move-down").on("click", function (){
 	  fullpage_api.moveSectionDown();
 	});

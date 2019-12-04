@@ -242,15 +242,40 @@ body {
 //////// BURGER ////////
 
 .burger {
-	display: none;
-  height: 30px;
-  width: 30px;
-  position: relative;
-  cursor: pointer;
 	&-wrap {
+		display: none;
+		position: relative;
+		cursor: pointer;
+		width: 15px;
+		height: 13px;
+	}
 
+	&,
+	&::before,
+	&::after {
+		content: '';
+	  width: 15px;
+	  height: 1px;
+	  background-color: #000;
+	  position: absolute;
+		left: 0;
+		top: 5px;
+		transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+	}
+	&::before {
+		top: -5px;
+	}
+	&::after {
+		top: 5px;
 	}
 }
+// BURGER
+// https://codepen.io/webcademy/pen/BaaNwJy
+// container:
+	// 15x13?
+// item
+	// 15x1
+	// margin: 5px
 
 
 
