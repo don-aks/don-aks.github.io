@@ -44,7 +44,7 @@ body {
 //////// ELEMENTS ////////
 
 .section {
-	padding-top: 82px;
+	padding-top: 90px;
 	&-title {
 		text-align: center;
 		font-weight: 600;
@@ -272,19 +272,10 @@ body {
 		top: 5px;
 	}
 }
-// BURGER
-// https://codepen.io/webcademy/pen/BaaNwJy
-// container:
-	// 15x13?
-// item
-	// 15x1
-	// margin: 5px
 
 
 
-//////////////////////////////////////////////////////
-//////////////////////SECTIONS////////////////////////
-//////////////////////////////////////////////////////
+
 
 
 
@@ -303,7 +294,6 @@ body {
 	&_fixed {
 		position: fixed;
 		width: 100%;
-		background: #fff;
 		z-index: 100;
 	}
 }

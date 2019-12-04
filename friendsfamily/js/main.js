@@ -1,16 +1,18 @@
 $(document).ready(function() {
-	$('#fullpage').fullpage({
-		autoScrolling: true,
-		scrollHorizontally: true,
-		sectionSelector: '.js-section',
-		anchors:['info1', 'info2', 'info3', 'scheme', 'box', 'map', 'contact-page']
-	});
+  $.scrollify({
+    section: ".js-section",
+    scrollbars: false,
+    scrollSpeed: 900
+  });
 	$('.burger-wrap').on('click', function() {
 		$('.burger').toggleClass('burger_active');
 		$('.menu-ul').slideToggle();
 	})
 	$(".js-move-down").on("click", function (){
-	  fullpage_api.moveSectionDown();
+	  $.scrollify.next();
+	});
+	$(".js-btn-contact").on("click", function (){
+	  $.scrollify.move("#contact");
 	});
 	$(".js-btn-contact").on("click", function (){
 	  fullpage_api.moveTo('contact-page', 0);
