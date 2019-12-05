@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $.scrollify({
     section: ".js-section",
-    scrollbars: false,
     scrollSpeed: 900
   });
 	$('.burger-wrap').on('click', function() {
