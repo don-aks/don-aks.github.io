@@ -252,27 +252,32 @@ body {
 		display: none;
 		position: relative;
 		cursor: pointer;
-		width: 15px;
-		height: 13px;
+		width: 30px;
+		height: 30px;
 	}
 
 	&,
 	&::before,
 	&::after {
 		content: '';
-	  width: 15px;
+	  width: 100%;
 	  height: 1px;
 	  background-color: #000;
 	  position: absolute;
 		left: 0;
-		top: 5px;
+		top: 1em;
 		transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 	}
 	&::before {
-		top: -5px;
+		top: -10px;
 	}
 	&::after {
-		top: 5px;
+		top: 10px;
+	}
+
+	// active effect
+	&_active {
+
 	}
 }
 
@@ -342,7 +347,7 @@ body {
 	&__subtitle {
 		font-weight: 600;
 		font-size: 30px;
-		margin: 100px 0;
+		margin-bottom: 100px;
 		max-width: 430px;
 	}
 	&__feature {
