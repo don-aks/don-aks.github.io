@@ -3,9 +3,12 @@
   .menu-ul__item {
     margin-left: 70px;
   }
-  .row-content__img {
-  	width: 77%;
-  }
+}
+
+@media (max-width: 770px) { //or (max-height: 840px) {
+	.header {
+		background-color: #fff;
+	}
 }
 
 @media (max-width: 770px) {
@@ -16,6 +19,20 @@
 	  &__img {
 	  	margin-right: 0;
 	  }
+	}
+
+	.row-content,
+	.row-content-right {
+		flex-direction: column;
+	}
+	.header {
+		&__inner {
+			margin-top: 10px;
+			margin-bottom: 10px;	
+		}
+	}
+	.section {
+    padding-top: 60px;
 	}
 }
 
@@ -52,6 +69,14 @@
 			}
 			// end disable hover effects
 		}
+	}
+	.logo {
+		&__name {
+	    display: block;
+	  }
+	  &__img {
+	  	margin-right: 18px;
+	  }
 	}
 }
 

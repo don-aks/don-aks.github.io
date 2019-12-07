@@ -1,12 +1,12 @@
 $(document).ready(function() {
   $.scrollify({
     section: ".js-section",
-    scrollSpeed: 900
+    scrollSpeed: 1500
   });
 	$('.burger-wrap').on('click', function() {
 		$('.burger').toggleClass('burger_active');
 		$('.menu-ul').slideToggle();
-	})
+	});
 	$(".js-move-down").on("click", function (){
 	  $.scrollify.next();
 	});
