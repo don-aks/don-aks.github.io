@@ -337,11 +337,12 @@ body {
 		font-weight: 600;
 		font-size: 45px;
 		max-width: 440px;
+		margin: 0;
 	}
 	&__subtitle {
 		font-weight: 600;
 		font-size: 30px;
-		margin-bottom: 100px;
+		margin: 100px 0;
 		max-width: 430px;
 	}
 	&__feature {
@@ -381,6 +382,10 @@ body {
 	}
 	&-items-right {
 		text-align: right;
+	}
+
+	&__img {
+		width: 100%;
 	}
 }
 

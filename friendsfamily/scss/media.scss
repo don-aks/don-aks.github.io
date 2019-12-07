@@ -46,7 +46,7 @@
 			margin-bottom: 10px;	
 		}
 	}
-	
+
 	.section {
     padding-top: 60px;
 	}
@@ -63,7 +63,7 @@
   .menu-ul {
   	width: 100%;
   	position: absolute;
-  	top: 54px;
+  	top: 53px;
   	left: 0;
 		display: none;
 		border-top: 1px solid rgba(0,0,0,.3);
@@ -97,6 +97,22 @@
 	  &__img {
 	  	margin-right: 18px;
 	  }
+	}
+}
+
+@media (max-width: 550px) {
+	.info {
+		&__title,
+		&__feature {
+			font-size: 36px;
+			margin: 30px 0;
+		}
+		&__subtitle {
+			margin: 40px 0;
+		}
+		&__text {
+			margin-bottom: 30px;
+		}
 	}
 }
 
