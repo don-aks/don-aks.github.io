@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $.scrollify({
     section: ".js-section",
-    scrollSpeed: 1500
+    scrollSpeed: 1300
   });
 	$('.burger-wrap').on('click', function() {
 		$('.burger').toggleClass('burger_active');
