@@ -197,8 +197,12 @@ body {
 		}
 	}
 
+	&__img-wrap {
+		height: 100%;
+		width: 100%;
+	}
 	&__img {
-		width: 55%;
+		width: 100%;
 	}
 }
 
@@ -378,6 +382,10 @@ body {
 	}
 	&-items-right {
 		text-align: right;
+	}
+	&__img,
+	&__img-wrap {
+		width: 100%;
 	}
 }
 
