@@ -414,6 +414,12 @@ body {
 //////// CONTACT ////////
 
 .contact {
+	&__subtitle {
+		font-weight: 600;
+		font-size: 30px;
+		margin-bottom: 100px;
+		max-width: 430px;
+	}
 	&__inner {
 		display: flex;
 		align-items: center;

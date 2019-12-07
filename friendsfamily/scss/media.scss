@@ -98,6 +98,21 @@
 	  	margin-right: 18px;
 	  }
 	}
+
+	
+	.contact {
+		&__subtitle {
+			margin: 0 0 25px;
+		}
+		&-form {
+			&__input {
+				margin-bottom: 10px;
+			}
+			&__input-file-label {
+				margin: 10px 0 18px 10px;
+			}
+		}
+	}
 }
 
 @media (max-width: 550px) {
