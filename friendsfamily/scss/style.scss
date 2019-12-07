@@ -380,6 +380,9 @@ body {
 .box {
 	&-item {
 		margin-bottom: 80px;
+		&__inner {
+    	margin: 0 auto;
+		}
 		&__title {
 			font-weight: 600;
 			margin: 25px 0;
