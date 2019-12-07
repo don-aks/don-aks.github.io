@@ -435,19 +435,6 @@ ul {
 .reviews {
 	background-color: #ebebeb;
 }
-.reviews__inner {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: center;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
 .review-item {
 	font-weight: 700;
 	color: #2b2b2b;
@@ -457,13 +444,15 @@ ul {
 	max-width: 450px;
 	width: 100%;
 }
-.review-item__img {
-	height: 90px;
-	flex-basis: auto;
-	border-radius: 50%;
+.review-item__img-wrap {
 	margin-right: 25px;
 	position: relative;
-	top: -10px; left: 0;
+	bottom: 10px;
+	left: 0;
+}
+.review-item__img {
+	width: 90px;
+	border-radius: 50%;
 }
 .review-item__author {
 	color: #757575;
