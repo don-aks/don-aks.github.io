@@ -279,7 +279,19 @@ body {
 
 	// active effect
 	&_active {
-
+		background-color: transparent;
+		&::before,
+		&::after {
+			content: '';
+			top: 0;
+			transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
 	}
 }
 
