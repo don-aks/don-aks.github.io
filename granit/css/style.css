@@ -381,6 +381,10 @@ img {
 	margin-top: auto;
 }
 
+.showcase-product__text {
+	width: 100%;
+}
+
 
 
 
@@ -422,6 +426,7 @@ img {
 	font-weight: 400;
 	font-size: 13px;
 	color: #292929;
+	width: 100%;
 }
 
 .showcase-product__price-old,
