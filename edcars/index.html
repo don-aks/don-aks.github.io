@@ -26,11 +26,15 @@
 			</div>
 			<div class="call header-call">
 				<div class="call-numbers header-call-numbers">
-					<div class="call-numbers__number header-call-numbers__number">
-						+7 (818) 247-47-25
+					<div class="call-numbers__number-wrap header-call-numbers__number-wrap">
+						<a href="tel:+78182474725" class="call-numbers__number header-call-numbers__number">
+							+7 (818) 247-47-25
+						</a>
 					</div>
-					<div class="call-numbers__number header-call-numbers__number">
-						+7 (818) 247-47-25
+					<div class="call-numbers__number-wrap header-call-numbers__number-wrap">
+						<a href="tel:+78182474725" class="call-numbers__number header-call-numbers__number">
+							+7 (818) 247-47-25
+						</a>
 					</div>
 				</div>
 				<button class="btn call__btn header-call__btn">
@@ -40,41 +44,50 @@
 		</div>
 	</div>
 </header>
+<main>
 <section class="topscreen">
 	<div class="topscreen__images"></div>
 	<div class="container">
 		<div class="topscreen__body-wrap">	
 			<div class="topscreen__body">
 				<h1 class="topscreen__title">
-					Оригинальные запчасти для Белаз
+					Оригинальные запчасти<br> для Белаз
 				</h1>
 				<h2 class="topscreen__subtitle">
 					с бесплатной доставкой в Ваш город!
 				</h2>
 				<div class="topscreen-advantages">
 					<div class="topscreen-advantages-item">
-						<div class="topscreen-advantages-item__img-wrap">
-							<img src="img/topscreen/advantages/item1.png" alt="">
+						<svg class="svg topscreen-advantages-item__img-wrap">
+							<image xlink:href="img/topscreen/advantages/item1.svg" src="img/topscreen/advantages/item1.png" class="svg__image topscreen-advantages-item__img"/>
+						</svg>
+						<div class="topscreen-advantages-item__text">
+							Дилерские цены - ниже на 20%, работаем без посредников!
 						</div>
-						Дилерские цены - ниже на 20%, работаем без посредников!
 					</div>
 					<div class="topscreen-advantages-item">
-						<div class="topscreen-advantages-item__img-wrap">
-							<img src="img/topscreen/advantages/item2.png" alt="">
+						<svg class="svg topscreen-advantages-item__img-wrap">
+							<image xlink:href="img/topscreen/advantages/item2.svg" src="img/topscreen/advantages/item2.png" class="svg__image topscreen-advantages-item__img"/>
+						</svg>
+						<div class="topscreen-advantages-item__text">
+							Срочная бесплатная доставка<br> за 7 дней
 						</div>
-						Срочная бесплатная доставка за 7 дней
 					</div>
 					<div class="topscreen-advantages-item">
-						<div class="topscreen-advantages-item__img-wrap">
-							<img src="img/topscreen/advantages/item3.png" alt="">
+						<svg class="svg topscreen-advantages-item__img-wrap">
+							<image xlink:href="img/topscreen/advantages/item3.svg" src="img/topscreen/advantages/item3.png" class="svg__image topscreen-advantages-item__img"/>
+						</svg>
+						<div class="topscreen-advantages-item__text">
+							Даем рассрочку<br> 6 месяцев
 						</div>
-						Даем рассрочку 6 месяцев
 					</div>
 					<div class="topscreen-advantages-item">
-						<div class="topscreen-advantages-item__img-wrap">
-							<img src="img/topscreen/advantages/item4.png" alt="">
+						<svg class="svg topscreen-advantages-item__img-wrap">
+							<image xlink:href="img/topscreen/advantages/item4.svg" src="img/topscreen/advantages/item4.png" class="svg__image topscreen-advantages-item__img"/>
+						</svg>
+						<div class="topscreen-advantages-item__text">
+							Даем гарантию<br> от 12 месяцев
 						</div>
-						Даем гарантию от 12 месяцев
 					</div>
 				</div>
 			</div>
@@ -85,23 +98,28 @@
 	<div class="price__images"></div>
 	<div class="container">
 		<div class="price__inner">
-			<div class="section-title section-title_small">
+			<h3 class="section-title section-title_small price__title">
 				Получите прайс прямо сейчас на электронную почту!
-			</div>
+			</h3>
 			<form class="form price-form">
-				<input type="text" class="form__input price-form__input form__input_email">
-				<input type="text" class="form__input price-form__input form__input_phone js-mask-phone">
-				<div class="form__descr price-form__descr">
-					Прайс придет к Вам на почту в течение 5 минут!
+				<input type="text" class="form__input price-form__input form__input_email" placeholder="Введите ваш e-mail">
+				<input type="text" class="form__input price-form__input form__input_phone js-mask-phone" placeholder="Введите ваш телефон">
+				<div class="price-form__btn-wrap">
+					<div class="price-form__descr-wrap">
+						<h4 class="price-form__descr">
+							Прайс придет к Вам на почту в течение 5 минут!
+						</h4>
+						<svg class="svg price-form__descr-svg"><image xlink:href="img/icons/clock.svg" src="img/icons/clock.png" class="svg__image"/></svg>
+					</div>
+					<button class="btn form__btn price-form__btn">
+						Получить прайс
+					</button>
 				</div>
-				<button class="btn form__btn price-form__btn">
-					Получить прайс
-				</button>
 			</form>
 		</div>
 	</div>
 </section>
-<section class="proposes section_dark-blue">
+<!-- <section class="proposes section_dark-blue">
 	<div class="container">
 		<div class="section-title section-title_white">
 			Вам не придется ждать!
@@ -144,12 +162,14 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
-
+</main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="js/main.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+
+<script src="js/main.min.js"></script>
 </body>
 </html>
