@@ -14,7 +14,9 @@
 	<div class="container">
 		<div class="header__inner">
 			<div class="logo header__logo">
-				<img src="img/logo/logo.png" alt="Eddie's Cars">
+				<a href="#">
+					<img src="img/logo/logo.png" alt="Eddie's Cars">
+				</a>
 			</div>
 			<div class="work-hours header-work-hours">
 				<div class="work-hours__time header-work-hours__time">
@@ -128,7 +130,7 @@
 							</object>
 						</div>
 					</div>
-					<button class="btn form__btn price-form__btn">
+					<button class="btn price-form__btn">
 						Получить прайс
 					</button>
 				</div>
@@ -180,7 +182,48 @@
 		</div>
 	</div>
 </section>
-
+<section class="detail section">
+	<div class="detail__images images">
+		<div class="detail__img images__img images__img_down-left">
+			<img src="img/detail/bg1.png" alt="Белаз">
+		</div>
+		<div class="detail__img images__img images__img_top-right">
+			<img src="img/detail/bg2.png" alt="Белаз">
+		</div>
+	</div>
+	<div class="container">
+		<div class="detail__inner">
+			<div class="section-title section-title_white">
+				Ищете конкретную деталь?
+			</div>
+			<div class="section-subtitle section-subtitle_white">
+				Если у Вас есть артикул - введите его в поле ниже и получите цену ПРЯМО СЕЙЧАС!
+			</div>
+			<form class="form detail-form flex">
+				<input type="text" class="form__input detail-form__input" placeholder="Введите артикул детали" name="detail">
+				<input type="text" class="form__input detail-form__input js-mask-phone" placeholder="Введите Ваш телефон" name="phone">
+				<button class="btn btn_gold detail-form__btn form__btn">
+					Узнать цену
+				</button>
+			</form>
+			<div class="detail-descr section-descr">
+				<div class="detail__text">
+					Мы перезвоним вам в течение 3 минут и назовем цену детали!
+				</div>
+				<div class="detail-descr__phone-wrap">
+					<div class="detail__text">
+						Или Вы можете перезвонить нам сами:
+					</div>
+					<div class="detail-descr__number-wrap">
+						<a href="tel:+78182474725" class="call-numbers__number detail-descr__number">
+							+7 (818) 247-47-25
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

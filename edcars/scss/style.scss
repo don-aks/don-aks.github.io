@@ -14,10 +14,21 @@ $font-main: 'Proxima Nova', sans-serif;
 
 //////// MAIN STYLES ////////
 
+html {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
 *,
 *:before,
 *:after {
 	box-sizing: border-box;
+	z-index: 2;
+	position: relative;
 }
 
 a {
@@ -25,16 +36,11 @@ a {
 	text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	font-weight: 400;
-}
-
 body {
 	font-family: $font-main;
-	font-weight: 400;
 	font-size: 18px;
 	color: #fff;
+	font-weight: 400;
 }
 
 .container {
@@ -69,6 +75,14 @@ body {
 	&:hover {
 		background: lighten($color-main, 5%);
 	}
+
+	&_gold {
+		background-color: #f7b516;
+
+		&:hover {
+			background-color: darken(#f7b516, 5%);;
+		}
+	}
 }
 
 .work-hours {
@@ -90,8 +104,6 @@ body {
 
 	&-numbers {
 		font-weight: 900;
-
-		margin-right: 25px;
 
 		&__number {
 			line-height: 22px;
@@ -186,6 +198,10 @@ body {
 			border-color: #000;
 		}
 	}
+
+	&__btn {
+		min-height: 70px;
+	}
 }
 
 .images {
@@ -193,7 +209,17 @@ body {
 	
 	&__img {
 		position: absolute;
-		z-index: -1;
+		z-index: 1;
+
+		&_top-right {
+			right: 0;
+			top: -100px;
+		}
+
+		&_down-left {
+			left: 0;
+			top: 169px;
+		}
 
 		img {
 			width: 100%;
@@ -225,6 +251,10 @@ body {
 		justify-content: space-between;
 
 		padding: 25px 0;
+	}
+
+	&-call-numbers {
+		margin-right: 25px;
 	}
 }
 
@@ -295,6 +325,7 @@ body {
 
 .price {
 	color: #000;
+	padding-bottom: 100px;
 
 	&__img {
 		width: 670px;
@@ -354,8 +385,52 @@ body {
 	&-item {
 		max-width: 220px;
 
-		&__img-wrap {
-			margin-bottom: 50px;
+		& + & {
+			margin-left: 20px;
 		}
+
+		&__img-wrap {
+			height: 100px;
+			margin-bottom: 50px;
+
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+		}
+
+		&__text {
+			min-height: 40px;
+		}
+	}
+}
+
+
+
+
+.detail {
+	background-color: $color-second;
+
+	&__inner {
+
+	}
+
+	&-descr {
+		text-align: center;
+
+		margin-top: 60px;
+
+		&__phone-wrap {
+			margin-top: 30px;
+		}
+		
+		&__number {
+			font-size: 30px;
+			font-weight: 800;
+			line-height: 50px;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
 	}
 }
