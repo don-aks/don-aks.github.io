@@ -126,12 +126,41 @@ body {
 	font-size: 32px;
 	text-align: center;
 
-	margin: 0 auto;
+	margin: 0 auto 100px;
 	max-width: 670px;
 
 	&_small {
 		max-width: 445px;
 		font-size: 30px;
+		margin: 0 auto;
+	}
+
+	&_white {
+		color: #fff;
+	}
+}
+
+.section {
+	padding: 100px 0;
+
+	&_dark-blue {
+		background-color: $color-dark;
+		color: #fff;
+	}
+}
+
+.section-subtitle {
+	color: #000;
+
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+
+	margin: -70px auto 100px;
+	max-width: 400px;
+
+	&_white {
+		color: #fff;
 	}
 }
 
@@ -150,12 +179,36 @@ body {
 
 		&::placeholder {
 			text-transform: uppercase;
+			font-size: 15px;
 		}
 
 		&:focus {
 			border-color: #000;
 		}
 	}
+}
+
+.images {
+	position: relative;
+	
+	&__img {
+		position: absolute;
+		z-index: -1;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	text-align: center;
 }
 
 
@@ -239,10 +292,13 @@ body {
 
 
 
+
 .price {
 	color: #000;
-	background: url(../img/price/bg.jpg) no-repeat 0 50%;
-	background-size: 50%;
+
+	&__img {
+		width: 670px;
+	}
 
 	&__title {
 		text-align: right;
@@ -257,7 +313,6 @@ body {
 	}
 	
 	&-form {
-		text-align: right;
 		
 		&__input {
 			margin-bottom: 30px;
@@ -265,6 +320,11 @@ body {
 
 		&__input + &__input {
 			margin-left: 30px;
+		}
+
+		&__descr-wrap {
+			display: flex;
+			align-items: center;
 		}
 
 		&__descr {
@@ -283,6 +343,19 @@ body {
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
+		}
+	}
+}
+
+
+
+.proposes {
+	
+	&-item {
+		max-width: 220px;
+
+		&__img-wrap {
+			margin-bottom: 50px;
 		}
 	}
 }
