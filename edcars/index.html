@@ -15,7 +15,7 @@
 		<div class="header__inner">
 			<div class="logo header__logo">
 				<a href="#">
-					<img src="img/logo/logo.png" alt="Eddie's Cars">
+					<img src="img/logo/logo.png" alt="Eddie's Cars logo">
 				</a>
 			</div>
 			<div class="work-hours header-work-hours">
@@ -106,16 +106,16 @@
 </section>
 <section class="price">
 	<div class="price__background-image background-image">
-		<img src="img/price/bg.jpg" alt="Белаз">
+		<img src="img/price/bg.jpg" alt>
 	</div>
 	<div class="container">
-		<div class="price__inner">
+		<div class="price__inner content-with-background-image">
 			<h3 class="section-title section-title_small price__title">
 				Получите прайс прямо сейчас на электронную почту!
 			</h3>
 			<form class="form price-form">
-				<input type="text" class="form__input price-form__input form__input_email" placeholder="Введите ваш e-mail" name="email">
-				<input type="text" class="form__input price-form__input form__input_phone js-mask-phone" placeholder="Введите ваш телефон" name="phone">
+				<input type="text" class="form__input price-form__input form__input_email-icon" placeholder="Введите ваш e-mail" name="email">
+				<input type="text" class="form__input price-form__input form__input_phone-icon js-mask-phone" placeholder="Введите ваш телефон" name="phone">
 				<div class="price-form__btn-wrap">
 					<div class="price-form__descr-wrap">
 						<h4 class="price-form__descr">
@@ -180,36 +180,36 @@
 	</div>
 </section>
 <section class="detail section section_blue">
-	<div class="detail__background-image background-image background-image_down-left detail__background-image1">
-		<img src="img/detail/bg1.png" alt="Белаз">
+	<div class="detail__background-image background-image background-image_bottom-left">
+		<img src="img/detail/bg1.png">
 	</div>
 	<div class="detail__background-image background-image background-image_top-right">
-		<img src="img/detail/bg2.png" alt="Белаз">
+		<img src="img/detail/bg2.png">
 	</div>
 	<div class="container">
-		<div class="detail__inner">
+		<div class="detail__inner content-with-background-image">
 			<h3 class="section-title">
 				Ищете конкретную деталь?
 			</h3>
 			<h4 class="section-subtitle">
 				Если у Вас есть артикул - введите его в поле ниже и получите цену<br> ПРЯМО СЕЙЧАС!
 			</h4>
-			<form class="form detail-form flex">
-				<input type="text" class="form__input detail-form__input" placeholder="Введите артикул детали" name="detail">
-				<input type="text" class="form__input detail-form__input js-mask-phone" placeholder="Введите Ваш телефон" name="phone">
-				<button class="btn btn_gold detail-form__btn form__btn">
+			<form class="form form-flex detail-form">
+				<input type="text" class="form__input detail-form__input form-flex__item" placeholder="Введите артикул детали" name="detail">
+				<input type="text" class="form__input detail-form__input js-mask-phone form-flex__item" placeholder="Введите Ваш телефон" name="phone">
+				<button class="btn btn_gold detail-form__btn form__btn form-flex__item">
 					Узнать цену
 				</button>
 			</form>
 			<div class="detail-descr section-descr">
-				<div class="detail__text">
+				<div class="section-text detail__text">
 					Мы перезвоним вам в течение 3 минут и назовем цену детали!
 				</div>
 				<div class="detail-descr__phone-wrap">
-					<div class="detail__text">
+					<div class="section-text detail__text">
 						Или Вы можете перезвонить нам сами:
 					</div>
-					<div class="detail-descr__number-wrap">
+					<div class="call-numbers__number-wrap detail-descr__number-wrap">
 						<a href="tel:+78182474725" class="call-numbers__number detail-descr__number">
 							+7 (818) 247-47-25
 						</a>
@@ -268,7 +268,7 @@
 		</h3>
 		<div class="flex bonuses__inner">
 			<div class="flex__item bonuses-item">
-				<div class="bonuses-item__circle">
+				<div class="circle bonuses-item__circle">
 					10%
 				</div>
 				<div class="bonuses-item__text">
@@ -276,7 +276,7 @@
 				</div>
 			</div>
 			<div class="flex__item bonuses-item">
-				<div class="bonuses-item__circle">
+				<div class="circle bonuses-item__circle">
 					20%
 				</div>
 				<div class="bonuses-item__text">
@@ -284,7 +284,7 @@
 				</div>
 			</div>
 			<div class="flex__item bonuses-item">
-				<div class="bonuses-item__circle">
+				<div class="circle bonuses-item__circle">
 					<div class="bonuses-item__img-wrap">
 						<img src="img/bonuses/item3.png" alt="Бесплатная доставка" class="bonuses-item__img">
 					</div>
@@ -294,7 +294,7 @@
 				</div>
 			</div>
 			<div class="flex__item bonuses-item">
-				<div class="bonuses-item__circle">
+				<div class="circle bonuses-item__circle">
 					<div class="bonuses-item__img-wrap">
 						<img src="img/bonuses/item4.png" alt="Оператор на связи" class="bonuses-item__img">
 					</div>
@@ -318,42 +318,42 @@
 			<div class="questions__list-wrap">
 				<ol class="questions__list">
 					<li class="questions-item">
-						<button class="questions-item__question">
+						<button class="questions-item__question js-question">
 							Как заказать деталь правильно?
 						</button>
-						<div class="questions-answer">
+						<div class="questions-answer js-answer">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus ipsa nisi, excepturi facilis qui nobis voluptatum voluptatibus nihil eius sit sed dolores aut in quasi tempore, eaque quaerat recusandae!
 						</div>
 					</li>
 					<li class="questions-item">
-						<button class="questions-item__question">
+						<button class="questions-item__question js-question">
 							Что делать, если запчасть не понадобилась?
 						</button>
-						<div class="questions-answer">
+						<div class="questions-answer js-answer">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus ipsa nisi, excepturi facilis qui nobis voluptatum voluptatibus nihil eius sit sed dolores aut in quasi tempore, eaque quaerat recusandae!
 						</div>
 					</li>
 					<li class="questions-item">
-						<button class="questions-item__question">
+						<button class="questions-item__question js-question">
 							Можете ли Вы установить деталь?
 						</button>
-						<div class="questions-answer">
+						<div class="questions-answer js-answer">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus ipsa nisi, excepturi facilis qui nobis voluptatum voluptatibus nihil eius sit sed dolores aut in quasi tempore, eaque quaerat recusandae!
 						</div>
 					</li>
 					<li class="questions-item">
-						<button class="questions-item__question">
+						<button class="questions-item__question js-question">
 							В чем преимущества оригинальных деталей?
 						</button>
-						<div class="questions-answer">
+						<div class="questions-answer js-answer">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus ipsa nisi, excepturi facilis qui nobis voluptatum voluptatibus nihil eius sit sed dolores aut in quasi tempore, eaque quaerat recusandae!
 						</div>
 					</li>
 					<li class="questions-item">
-						<button class="questions-item__question">
+						<button class="questions-item__question js-question">
 							В чем преимущества оригинальных деталей?
 						</button>
-						<div class="questions-answer">
+						<div class="questions-answer js-answer">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus ipsa nisi, excepturi facilis qui nobis voluptatum voluptatibus nihil eius sit sed dolores aut in quasi tempore, eaque quaerat recusandae!
 						</div>
 					</li>
@@ -371,7 +371,183 @@
 		</div>
 	</div>
 </section>
+<section class="scheme section">
+	<div class="container">
+		<h3 class="section-title scheme__title">
+			С нами удобно работать!
+		</h3>
+		<h4 class="section-subtitle">
+			Более 70% клиентов приходят к нам по рекомендации!
+		</h4>
+		<div class="scheme__inner flex">
+			<div class="scheme-item flex__item">
+				<div class="scheme-item__img-wrap">
+					<img src="img/scheme/item1.png" alt="Предоплата 50%" class="scheme-item__img">
+				</div>
+				<div class="scheme-item__text">
+					Вы вносите предоплату<br> в размере 50%<br>от стоимости запчасти
+				</div>
+			</div>
+			<div class="scheme-item flex__item">
+				<div class="scheme-item__img-wrap">
+					<img src="img/scheme/item2.png" alt="Отправка" class="scheme-item__img">
+				</div>
+				<div class="scheme-item__text">
+					Отправляем запчасти в день заказа
+				</div>
+			</div>
+			<div class="scheme-item flex__item">
+				<div class="scheme-item__img-wrap">
+					<img src="img/scheme/item3.png" alt="Проверка" class="scheme-item__img">
+				</div>
+				<div class="scheme-item__text">
+					Получаете деталь, проверяете, оплачиваете оставшиеся 50%
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="warehouse section section_blue">
+	<div class="container">
+		<h3 class="section-title scheme__title">
+			У нас собственный склад
+		</h3>
+		<h4 class="section-subtitle">
+			Это позволяет нам быстро обрабатывать запросы и отгружать детали в день заказа!
+		</h4>
+		<!-- slider -->
+	</div>
+</section>
+<section class="brigades section">
+	<div class="container">
+		<h3 class="section-title scheme__title">
+			У нас в штате есть мобильные бригады
+		</h3>
+		<h4 class="section-subtitle">
+			Которые готовы выехать на сервисное обслуживание, ремонт и проведение диагностики!
+		</h4>
+		<div class="brigades__inner flex">
+			<div class="brigades-item flex__item">
+				<div class="circle brigades-item__circle">
+					<div class="brigades-item__img-wrap">
+						<img src="img/brigades/item1.png" alt="Выезд в течении 2 дней" class="brigades-item__img">
+					</div>
+				</div>
+				<div class="brigades-item__text">
+					Организуем выезд специалистов<br> в течение двух дней
+				</div>
+			</div>
+			<div class="brigades-item flex__item">
+				<div class="circle brigades-item__circle">
+					<div class="brigades-item__img-wrap">
+						<img src="img/brigades/item2.png" alt="Необходимое оборудование" class="brigades-item__img">
+					</div>
+				</div>
+				<div class="brigades-item__text">
+					Бригады укомплектованы<br> всем необходимым оборудованием<br> для производства работ<br> любой сложности
+				</div>
+			</div>
+			<div class="brigades-item flex__item">
+				<div class="circle brigades-item__circle">
+					<div class="brigades-item__img-wrap">
+						<img src="img/brigades/item3.png" alt="Обучение" class="brigades-item__img">
+					</div>
+				</div>
+				<div class="brigades-item__text">
+					Все специалисты проходят обучение и ежегодную аттестацию
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="consultation section section_blue">
+	<div class="background-image background-image_bottom-right">
+		<img src="img/consultation/bg.png" alt>
+	</div>
+	<div class="container content-with-background-image">
+		<h3 class="section-title consultation__title">
+			Если Вам необходима бесплатная консультация по вопросу обслуживания
+		</h3>
+		<p class="section-text consultation__text">
+			Звоните нам по телефону:
+		</p>
+		<div class="call-numbers__number-wrap consultation__number-wrap">
+			<a href="tel:+78182474725" class="call-numbers__number consultation__number">
+				+7 (818) 247-47-25
+			</a>
+		</div>
+		<form class="consultation-form form form-flex">
+			<input type="text" class="form__input consultation-form__input form__input_phone-icon js-mask-phone form-flex__item" placeholder="Введите ваш телефон" name="phone">
+			<button class="btn btn_gold detail-form__btn form__btn form-flex__item">
+				Узнать цену
+			</button>
+		</form>
+	</div>
+</section>
+<section class="about section">
+	<div class="about__body">
+		<div class="background-image background-image_top-left">
+			<img src="img/about/bg1.png" alt>
+		</div>
+		<div class="background-image background-image_bottom-right">
+			<img src="img/about/bg2.png" alt>
+		</div>
+		<div class="container content-with-background-image">
+			<h3 class="section-title about__title">
+				Приезжайте в наш офис!
+			</h3>
+			<div class="about__address">
+				г. Архангельск, Москва-Сити, оф. 3725
+			</div>
+			<div class="call-numbers__number-wrap about__number-wrap">
+				<a href="tel:+78182474725" class="call-numbers__number about__number">
+					+7 (818) 247-47-25
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="about__map">
+		<!-- map -->
+	</div>
+</section>
 </main>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner flex">
+			<div class="logo footer__logo">
+				<a href="#">
+					<img src="img/logo/logo.png" alt="Eddie's Cars logo">
+				</a>
+			</div>
+			<div class="footer-copyright">
+				<div class="footer-copyright__text">
+					© 2016, Сделано с
+				</div>
+				<div class="footer-copyright__icon" style="width: 15px; height: 15px">
+					<object data='img/icons/heart.svg' class="svg__image">
+						<img src='img/icons/heart.png' class="svg__image topscreen-advantages-item__img" alt="любовью" /> 
+					</object>
+				</div>
+				<div class="footer-copyright__text">
+					командой
+				</div>
+				<div class="footer-copyright__icon" style="width: 70px; height: 20px">
+					<img src='img/logo/team-logo.png' class="svg__image topscreen-advantages-item__img" alt="ДА!Маркетинг" />
+				</div>
+			</div>
+			<div class="footer-call">
+				<div class="footer-call__text">
+					Есть вопросы? Звоните!
+				</div>
+				<div class="footer-call__number-wrap">
+					<a href="tel:+78182474725" class="call-numbers__number footer-call__number">
+						+7 (818) 247-47-25
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
