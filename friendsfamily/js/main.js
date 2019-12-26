@@ -13,8 +13,5 @@ $(document).ready(function() {
 	$(".js-btn-contact").on("click", function (){
 	  $.scrollify.move("#contact");
 	});
-	$(".js-btn-contact").on("click", function (){
-	  fullpage_api.moveTo('contact-page', 0);
-	});
 	$(".js-input__telephone").mask("+7 (nnn) nnn-nn-nn");
 });
