@@ -1,22 +1,63 @@
 $(function() {
 	$(".js-mask-phone").mask("+7 (nnn) nnn-nn-nn");
-	$(".js-question").on('click', function(event) {
-		var ans = $(this).siblings('.js-answer');
-		ans.show(300);
-		/*
-			При фокусе должен появлятся элемент в DOM'е, js-answer__close-btn, с аттрибутами aria-label="Закрыть" title="Закрыть"
-			При клике на этот элемент должно закрываться всплывающее окошко.
-			2 способа:
-				1. Сделать функцию.
-				2. Сделать элемент unfocused.
-			Второй предпочтительнее для такого рода проекта, но нужно знать как сделать и первым способом.
-			Пока что я js особо не понимаю, поэтому отложу сложные штуки на более подходящее время :).
 
-			Также нужно сделать эффект при появлении. Подойдет animate.css или CSS код из magnific popup.
-		*/
+	// start QnA
+
+	function show_tooltip(elem) {
+		$(elem).toggleClass('questions__question_active');
+		$js_answer = $(elem).siblings('.js-answer');
+		$js_answer.toggleClass('questions__answer_show');
+		$js_answer.prepend('<button class="js-answer__close-btn questions__answer-close-btn" aria-label="Закрыть" title="Закрыть"></button>');
+	};
+
+	function close_tooltip() {
+		$(".questions__question_active").removeClass('questions__question_active');
+		$(".questions__answer_show").removeClass('questions__answer_show');
+		close_btn = $(".js-answer__close-btn");
+		window.setTimeout(function() {
+			$(close_btn).remove()
+		}, 300);
+	};
+
+	$(".js-question").on('click', function() {
+		if ($(this).hasClass("questions__question_active")) {
+			close_tooltip();
+		}
+		else if ($('*').is(".questions__question_active")) {
+			close_tooltip();
+			show_tooltip($(this));
+		}
+		else{
+			show_tooltip($(this));
+		};
 	});
-	/*$(".js-question").focusout(function(event) {
-		var ans = $(this).siblings('.js-answer');
-		ans.hide(300);
-	});*/
-})
+
+	$(".js-answer").on("click", ".js-answer__close-btn", close_tooltip);
+
+	$(document).click(function(event) {
+		$question_active = $(".questions__question_active");
+		if ($('*').is($question_active)) {
+			$target = $(event.target);
+			$answer_active = $(".questions__answer_show");
+
+			if(!$target.closest($question_active).length && 
+			!$target.closest($answer_active).length) {
+				close_tooltip();
+			};
+		};
+	});
+
+	// end QnA
+
+	$(".questions__btn").on('click', function() {
+		$(".questions__list_hidden").slideToggle();
+		$(this).toggleClass("questions__btn_slide");
+		html = $(this).html();
+		if (html == "Скрыть вопросы") {
+			$(this).html("Еще вопросы");
+		}
+		else {
+			$(this).html("Скрыть вопросы");
+		}
+	});
+});
