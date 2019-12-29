@@ -786,8 +786,54 @@ body {
 
 
 
-.warehouse {
+.warehouse-slider {
 
+	.slick-track {
+		margin: 0 15px;
+	}
+
+	.slick-list {
+		position: relative;
+
+		margin: 0 -15px;
+	}
+
+	.slick-arrow {
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+
+		width: 25px;
+		height: 30px;
+		padding: 0;
+		
+		border: 0;
+		outline: 0;
+		background: transparent no-repeat;
+		background-size: cover;
+		background-image: url(../img/icons/left-arrow.png);
+		background-image: linear-gradient(transparent, transparent), url(../img/icons/left-arrow.svg);
+
+		cursor: pointer;
+		opacity: .8;
+		transition: opacity .3s;
+
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+	}
+
+	.slick-prev {
+		left: 25px;
+	}
+
+	.slick-next {
+		right: 25px;
+
+		background-image: url(../img/icons/right-arrow.png);
+		background-image: linear-gradient(transparent, transparent), url(../img/icons/right-arrow.svg);
+	}
 }
 
 

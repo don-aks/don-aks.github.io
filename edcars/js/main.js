@@ -60,4 +60,13 @@ $(function() {
 			$(this).html("Скрыть вопросы");
 		}
 	});
+
+	$('.warehouse-slider').slick({
+		slidesToShow: 3,
+  	slidesToScroll: 1,
+  	// autoplay: true,
+  	autoplaySpeed: 5000,
+  	prevArrow: '<button type="button" class="slick-arrow slick-prev"></button>',
+  	nextArrow: '<button type="button" class="slick-arrow slick-next"></button>'
+	});
 });
