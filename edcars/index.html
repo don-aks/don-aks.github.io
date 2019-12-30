@@ -115,8 +115,12 @@
 				Получите прайс прямо сейчас на электронную почту!
 			</h3>
 			<form class="form price-form">
-				<input type="text" class="form__input price-form__input form__input_email-icon" placeholder="Введите ваш e-mail" name="email">
-				<input type="text" class="form__input price-form__input form__input_phone-icon js-mask-phone" placeholder="Введите ваш телефон" name="phone">
+				<label class="input-label input-label_email-icon price-form__input">
+					<input type="text" class="form__input input-label__input" placeholder="Введите ваш e-mail" name="email">
+				</label>
+				<label class="input-label input-label_phone-icon price-form__input">
+					<input type="text" class="form__input js-mask-phone input-label__input" placeholder="Введите ваш телефон" name="phone">
+				</label>
 				<div class="price-form__btn-wrap">
 					<button class="btn price-form__btn form__btn" type="submit">
 						Получить прайс
@@ -197,7 +201,9 @@
 			</h4>
 			<form class="form form-flex detail-form">
 				<input type="text" class="form__input detail-form__input form-flex__item" placeholder="Введите артикул детали" name="detail">
-				<input type="text" class="form__input detail-form__input js-mask-phone form-flex__item" placeholder="Введите Ваш телефон" name="phone">
+				<label class="input-label input-label_phone-icon form-flex__item">
+					<input type="text" class="form__input detail-form__input js-mask-phone input-label__input" placeholder="Введите Ваш телефон" name="phone">
+				</label>
 				<button class="btn btn_gold detail-form__btn form__btn form-flex__item" type="submit">
 					Узнать цену
 				</button>
@@ -579,7 +585,9 @@
 			</a>
 		</div>
 		<form class="consultation-form form form-flex">
-			<input type="text" class="form__input consultation-form__input form__input_phone-icon js-mask-phone form-flex__item" placeholder="Введите ваш телефон" name="phone">
+			<label class="input-label input-label_phone-icon form-flex__item">
+				<input type="text" class="form__input consultation-form__input js-mask-phone input-label__input" placeholder="Введите ваш телефон" name="phone">
+			</label>
 			<button class="btn btn_gold detail-form__btn form__btn form-flex__item" type="submit">
 				Узнать цену
 			</button>

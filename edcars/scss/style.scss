@@ -318,6 +318,45 @@ body {
 
 
 
+.input-label {
+	display: inline-block;
+	
+	position: relative;
+
+	&__input {
+		padding-right: 50px;
+	}
+
+	&::after {
+		content: '';
+		display: inline-block;
+
+		width: 24px;
+		height: 24px;
+		
+		position: absolute;
+		right: 20px;
+		top: 34%;
+
+		opacity: .5;
+		background-repeat: no-repeat;
+	}
+
+	&_phone-icon::after {
+		background-image: url(../img/icons/phone.png);
+		background-image: linear-gradient(transparent, transparent), url(../img/icons/phone.svg);
+	}
+
+	&_email-icon::after {
+		background-image: url(../img/icons/mail.png);
+		background-image: linear-gradient(transparent, transparent), url(../img/icons/mail.svg);
+	}
+}
+
+
+
+
+
 
 //////// SECTIONS ////////
 
