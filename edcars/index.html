@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="img/logo/favicon.png">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -16,7 +16,7 @@
 		<div class="header__inner">
 			<div class="logo header__logo">
 				<a href="#">
-					<img src="img/logo/logo.png" alt="Eddie's Cars logo">
+					<img src="img/logo/logo.png" alt="Eddie's Cars logo" class="logo__img">
 				</a>
 			</div>
 			<div class="work-hours header-work-hours">
@@ -57,7 +57,7 @@
 					Оригинальные запчасти<br> для Белаз
 				</h1>
 				<h2 class="topscreen__subtitle">
-					с бесплатной доставкой в Ваш город!
+					с бесплатной доставкой<br> в Ваш город!
 				</h2>
 				<div class="topscreen-advantages">
 					<div class="topscreen-advantages-item">
@@ -118,6 +118,9 @@
 				<input type="text" class="form__input price-form__input form__input_email-icon" placeholder="Введите ваш e-mail" name="email">
 				<input type="text" class="form__input price-form__input form__input_phone-icon js-mask-phone" placeholder="Введите ваш телефон" name="phone">
 				<div class="price-form__btn-wrap">
+					<button class="btn price-form__btn form__btn" type="submit">
+						Получить прайс
+					</button>
 					<div class="price-form__descr-wrap">
 						<h4 class="price-form__descr">
 							Прайс придет к Вам на почту в течение 5 минут!
@@ -128,9 +131,6 @@
 							</object>
 						</div>
 					</div>
-					<button class="btn price-form__btn">
-						Получить прайс
-					</button>
 				</div>
 			</form>
 		</div>
@@ -193,12 +193,12 @@
 				Ищете конкретную деталь?
 			</h3>
 			<h4 class="section-subtitle">
-				Если у Вас есть артикул - введите его в поле ниже и получите цену<br> ПРЯМО СЕЙЧАС!
+				Если у Вас есть артикул - введите его в поле ниже и получите цену ПРЯМО СЕЙЧАС!
 			</h4>
 			<form class="form form-flex detail-form">
 				<input type="text" class="form__input detail-form__input form-flex__item" placeholder="Введите артикул детали" name="detail">
 				<input type="text" class="form__input detail-form__input js-mask-phone form-flex__item" placeholder="Введите Ваш телефон" name="phone">
-				<button class="btn btn_gold detail-form__btn form__btn form-flex__item">
+				<button class="btn btn_gold detail-form__btn form__btn form-flex__item" type="submit">
 					Узнать цену
 				</button>
 			</form>
@@ -319,9 +319,11 @@
 			<div class="questions__list-wrap">
 				<ol class="questions__list">
 					<li class="questions-item">
-						<span class="questions__question js-question">
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
 							Как заказать деталь правильно?
 						</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question-answer__text">
 								Заказать деталь правильно помогут Вам наши менеджеры. Просто позвоните нам или закажите звонок и мы с Вами свяжемся.
@@ -329,9 +331,11 @@
 						</div>
 					</li>
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							Что делать, если запчасть не понадобилась?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								Что делать, если запчасть не понадобилась?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question-answer__text">
 								Если запчасть не понадобилась - ничего страшного. Вы можете вернуть за неё деньги в течении 14 дней после получения товара.
@@ -339,9 +343,11 @@
 						</div>
 					</li>
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							Можете ли Вы установить деталь?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								Можете ли Вы установить деталь?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question-answer__text">
 								Да. У нас есть мобильные бригады, которые занимаются установкой детали
@@ -349,9 +355,11 @@
 						</div>
 					</li>
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							Сколько будет стоить установка детали?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								Сколько будет стоить установка детали?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question__answer-text">
 								Цена установки детали составляет 10% от стоимости самой детали.
@@ -359,9 +367,11 @@
 						</div>
 					</li>
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							В чем преимущества оригинальных деталей?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								В чем преимущества оригинальных деталей?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question__answer-text">
 								Оригинальные детали имеют гарантию.
@@ -371,9 +381,11 @@
 				</ol>
 				<ol class="questions__list questions__list_hidden" start="6">
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							Как заказать деталь правильно?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								Как заказать деталь правильно?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question-answer__text">
 								Заказать деталь правильно помогут Вам наши менеджеры. Просто позвоните нам или закажите звонок и мы с Вами свяжемся.
@@ -381,9 +393,11 @@
 						</div>
 					</li>
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							Что делать, если запчасть не понадобилась?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								Что делать, если запчасть не понадобилась?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question-answer__text">
 								Если запчасть не понадобилась - ничего страшного. Вы можете вернуть за неё деньги в течении 14 дней после получения товара.
@@ -391,9 +405,11 @@
 						</div>
 					</li>
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							Можете ли Вы установить деталь?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								Можете ли Вы установить деталь?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question-answer__text">
 								Да. У нас есть мобильные бригады, которые занимаются установкой детали
@@ -401,9 +417,11 @@
 						</div>
 					</li>
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							Сколько будет стоить установка детали?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								Сколько будет стоить установка детали?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question__answer-text">
 								Цена установки детали составляет 10% от стоимости самой детали.
@@ -411,9 +429,11 @@
 						</div>
 					</li>
 					<li class="questions-item">
-						<span class="questions__question js-question">
-							В чем преимущества оригинальных деталей?
-						</span>
+						<div class="questions__question-wrap">
+							<span class="questions__question js-question">
+								В чем преимущества оригинальных деталей?
+							</span>
+						</div>
 						<div class="questions__answer js-answer">
 							<p class="question__answer-text">
 								Оригинальные детали имеют гарантию.
@@ -426,7 +446,7 @@
 				</button>
 			</div>
 			<div class="questions__img-wrap">
-				<img src="img/questions/photo.jpg" alt='Эдуард Викторович, Директор ООО "Eddie`s-Car"' class="question__img" \>
+				<img src="img/questions/photo.jpg" alt='Эдуард Викторович, Директор ООО "Eddie`s-Car"' class="questions__img" \>
 				<div class="questions__img-descr">
 					Эдуард Викторович,<br> Директор ООО "Eddie`s-Car"
 				</div>
@@ -479,22 +499,22 @@
 			Это позволяет нам быстро обрабатывать запросы и отгружать детали в день заказа!
 		</h4>
 		<div class="warehouse-slider">
-			<div class="warehouse-slider__item">
+			<div class="warehouse-slider__item" tabindex="-1">
 				<img src="img/warehouse/photo1.jpg" alt="Фотография склада" class="warehouse-slider__img">
 			</div>
-			<div class="warehouse-slider__item">
+			<div class="warehouse-slider__item" tabindex="-1">
 				<img src="img/warehouse/photo2.jpg" alt="Фотография склада" class="warehouse-slider__img">
 			</div>
-			<div class="warehouse-slider__item">
+			<div class="warehouse-slider__item" tabindex="-1">
 				<img src="img/warehouse/photo3.jpg" alt="Фотография склада" class="warehouse-slider__img">
 			</div>
-			<div class="warehouse-slider__item">
+			<div class="warehouse-slider__item" tabindex="-1">
 				<img src="img/warehouse/photo4.jpg" alt="Фотография склада" class="warehouse-slider__img">
 			</div>
-			<div class="warehouse-slider__item">
+			<div class="warehouse-slider__item" tabindex="-1">
 				<img src="img/warehouse/photo5.jpg" alt="Фотография склада" class="warehouse-slider__img">
 			</div>
-			<div class="warehouse-slider__item">
+			<div class="warehouse-slider__item" tabindex="-1">
 				<img src="img/warehouse/photo6.jpg" alt="Фотография склада" class="warehouse-slider__img">
 			</div>
 		</div>
@@ -560,42 +580,42 @@
 		</div>
 		<form class="consultation-form form form-flex">
 			<input type="text" class="form__input consultation-form__input form__input_phone-icon js-mask-phone form-flex__item" placeholder="Введите ваш телефон" name="phone">
-			<button class="btn btn_gold detail-form__btn form__btn form-flex__item">
+			<button class="btn btn_gold detail-form__btn form__btn form-flex__item" type="submit">
 				Узнать цену
 			</button>
 		</form>
 	</div>
 </section>
 <section class="about section">
-	<div class="about__body">
-		<div class="about__background-image background-image background-image_top-left">
-			<img src="img/about/bg1.png" alt>
-		</div>
-		<div class="about__background-image background-image background-image_bottom-right">
-			<img src="img/about/bg2.png" alt>
-		</div>
-		<div class="container content-with-background-image">
-			<h3 class="section-title about__title">
-				Приезжайте в наш офис!
-			</h3>
-			<div class="about__address">
-				г. Архангельск, Москва-Сити, оф. 3725
-			</div>
-			<div class="call-numbers__number-wrap about__number-wrap">
-				<a href="tel:+78182474725" class="call-numbers__number about__number">
-					+7 (818) 247-47-25
-				</a>
-			</div>
-		</div>
+	<div class="about__background-image background-image background-image_bottom-right">
+		<img src="img/about/bg2.png" alt>
 	</div>
-	<div class="about__map">
-		<!-- map -->
+	<div class="about__background-image background-image background-image_top-left">
+		<img src="img/about/bg1.png" alt>
+	</div>
+	<div class="container content-with-background-image">
+		<h3 class="section-title about__title">
+			Приезжайте в наш офис!
+		</h3>
+		<div class="about__address">
+			г. Архангельск, Москва-Сити, оф. 3725
+		</div>
+		<div class="call-numbers__number-wrap about__number-wrap">
+			<a href="tel:+78182474725" class="call-numbers__number about__number">
+				+7 (818) 247-47-25
+			</a>
+		</div>
 	</div>
 </section>
+<div class="map">
+	<div class="map__inner">
+		<iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5003189156405!2d37.5352637159645!3d55.74981049969026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bdc191c196f%3A0x59707d763d601738!2z0JzQvtGB0LrQstCwLdCh0LjRgtC4!5e0!3m2!1sen!2sua!4v1577642045168!5m2!1sen!2sua" frameborder="0" allowfullscreen=""></iframe>
+	</div>
+</div>
 </main>
 <footer class="footer">
 	<div class="container">
-		<div class="footer__inner flex">
+		<div class="footer__inner">
 			<div class="logo footer__logo">
 				<a href="#">
 					<img src="img/logo/logo.png" alt="Eddie's Cars logo">

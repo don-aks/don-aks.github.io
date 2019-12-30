@@ -5,7 +5,7 @@ $(function() {
 
 	function show_tooltip(elem) {
 		$(elem).toggleClass('questions__question_active');
-		$js_answer = $(elem).siblings('.js-answer');
+		$js_answer = $(elem).parent().siblings('.js-answer');
 		$js_answer.toggleClass('questions__answer_show');
 		$js_answer.prepend('<button class="js-answer__close-btn questions__answer-close-btn" aria-label="Закрыть" title="Закрыть"></button>');
 	};
@@ -64,9 +64,24 @@ $(function() {
 	$('.warehouse-slider').slick({
 		slidesToShow: 3,
   	slidesToScroll: 1,
-  	// autoplay: true,
+  	autoplay: true,
   	autoplaySpeed: 5000,
-  	prevArrow: '<button type="button" class="slick-arrow slick-prev"></button>',
-  	nextArrow: '<button type="button" class="slick-arrow slick-next"></button>'
+  	responsive: [
+    {
+      breakpoint: 830,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+    	breakpoint: 600,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: "25px"
+      }
+    }
+  ]
 	});
 });
