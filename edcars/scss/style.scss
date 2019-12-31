@@ -766,11 +766,12 @@ body {
 
 		position: absolute;
 		left: 30px;
-		top: 30px;
+		top: 100%;
 		z-index: -1;
 
 		width: 330px;
 		padding: 15px 50px 18px 15px;
+		margin-top: 6px;
 
 		background-color: #fff;
 		color: #000;
@@ -799,17 +800,18 @@ body {
 	}
 
 	&__answer-close-btn {
-		width: 12px;
-		height: 12px;
+		width: 24px;
+		height: 24px;
 		padding: 0;
 
 		position: absolute;
-		top: 12px;
-		right: 12px;
+		top: 3px;
+    right: 5px;
 		
 		border: 0;
 		outline: 0;
-		background: transparent no-repeat;
+		background: transparent no-repeat center 12px;
+		background-size: 12px;
 		background-image: url(../img/icons/close.png);
 		background-image: linear-gradient(transparent, transparent), url(../img/icons/close.svg);
 
