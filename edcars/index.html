@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" type="image/png" href="img/logo/favicon.png">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -40,7 +41,7 @@
 						</a>
 					</div>
 				</div>
-				<button class="btn call__btn header-call__btn">
+				<button class="btn call__btn header-call__btn popup-lnk" data-mfp-src="#popup-call">
 					Заказать звонок
 				</button>
 			</div>
@@ -122,7 +123,7 @@
 					<input type="text" class="form__input js-mask-phone input-label__input" placeholder="Введите ваш телефон" name="phone">
 				</label>
 				<div class="price-form__btn-wrap">
-					<button class="btn price-form__btn form__btn" type="submit">
+					<button class="btn price-form__btn form__btn popup-lnk" type="submit" data-mfp-src="#popup-thank-email">
 						Получить прайс
 					</button>
 					<div class="price-form__descr-wrap">
@@ -204,7 +205,7 @@
 				<label class="input-label input-label_phone-icon form-flex__item">
 					<input type="text" class="form__input detail-form__input js-mask-phone input-label__input" placeholder="Введите Ваш телефон" name="phone">
 				</label>
-				<button class="btn btn_gold detail-form__btn form__btn form-flex__item" type="submit">
+				<button class="btn btn_gold detail-form__btn form__btn form-flex__item popup-lnk" type="submit" data-mfp-src="#popup-thank-call">
 					Узнать цену
 				</button>
 			</form>
@@ -588,7 +589,7 @@
 			<label class="input-label input-label_phone-icon form-flex__item">
 				<input type="text" class="form__input consultation-form__input js-mask-phone input-label__input" placeholder="Введите ваш телефон" name="phone">
 			</label>
-			<button class="btn btn_gold detail-form__btn form__btn form-flex__item" type="submit">
+			<button class="btn btn_gold detail-form__btn form__btn form-flex__item popup-lnk" type="submit" data-mfp-src="#popup-thank-call">
 				Узнать цену
 			</button>
 		</form>
@@ -661,9 +662,59 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/slick.min.js"></script>
 
 <script src="js/main.min.js"></script>
+
+
+<!-- Popups -->
+<div id="popup-thank-call" class="popup mfp-with-anim mfp-hide popup-with-autoclose">
+	<div class="popup__container">
+		<div class="popup__title">
+			Спасибо за вашу заявку!
+		</div>
+		<div class="popup__text">
+			Мы свяжемся с Вами в ближайшее время!
+		</div>
+	</div>
+</div>
+
+<div id="popup-thank-email" class="popup mfp-with-anim mfp-hide popup-with-autoclose">
+	<div class="popup__container">
+		<div class="popup__title">
+			Спасибо за вашу заявку!
+		</div>
+		<div class="popup__text">
+			Ваше письмо придет на почту в течении нескольких минут.
+		</div>
+		<div class="popup__text">
+			Если письмо не пришло, проверьте папку "Спам".
+		</div>
+	</div>
+</div>
+
+<div id="popup-call" class="popup mfp-with-anim mfp-hide">
+	<div class="popup__container">
+		<div class="popup__title">
+			Заказ обратного звонка
+		</div>
+		<div class="popup__text">
+			Оставьте заявку и мы Вам перезвоним!
+		</div>
+		<form class="form popup__form">
+			<label class="input-label input-label_person-icon popup__input-label">
+				<input type="text" class="form__input input-label__input popup__input" placeholder="Ваше имя" name="name">
+			</label>
+			<label class="input-label input-label_phone-icon popup__input-label">
+				<input type="text" class="form__input js-mask-phone input-label__input popup__input" placeholder="Ваш телефон" name="phone">
+			</label>
+			<button class="btn form__btn popup__btn popup-lnk" type="submit" data-mfp-src="#popup-thank-call">
+				Отправить заявку
+			</button>
+		</form>
+	</div>
+</div>
 </body>
 </html>

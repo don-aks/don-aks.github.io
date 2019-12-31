@@ -1,6 +1,24 @@
 $(function() {
 	$(".js-mask-phone").mask("+7 (nnn) nnn-nn-nn");
 
+	$('.popup-lnk').magnificPopup({
+		type: 'inline',
+		removalDelay: 500,
+		mainClass: 'mfp-zoom-in',
+		callbacks: {
+			// автозакрытие через 3 секунды, если popup имеет класс popup-with-autoclose
+			open: function() {
+				if ($.magnificPopup.instance.content.hasClass('popup-with-autoclose')) {
+					setTimeout(function(){
+						$.magnificPopup.close();
+					}, 3000);
+				}
+			}
+		}
+	});
+
+	
+
 	// start QnA
 
 	function show_tooltip(elem) {
@@ -48,6 +66,8 @@ $(function() {
 	});
 
 	// end QnA
+
+	
 
 	$(".questions__btn").on('click', function() {
 		$(".questions__list_hidden").slideToggle();
