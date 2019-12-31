@@ -104,4 +104,16 @@ $(function() {
     }
   ]
 	});
+
+	// показывать карту, когда докрутили до третьего блока выше карты
+	const showMapBlock = $(".map").prevAll().eq(2);
+	const showMapBlockPosition = showMapBlock.offset().top;
+
+	$(window).bind('scroll', function(){
+		if ($(this).scrollTop() > showMapBlockPosition) {
+			const mapInner = $('.map__inner');
+			mapInner.html(mapInner.data('content-lazy-load'));
+			$(window).unbind('scroll');
+		}
+	});
 });
