@@ -51,7 +51,8 @@ ul {
   font-size: 28px
 }
 
-.call__number:hover {
+.call__number:hover,
+.call__number:focus {
   text-decoration: underline
 }
 
@@ -64,7 +65,8 @@ ul {
   transition: color .4s
 }
 
-.call__request:hover {
+.call__request:hover
+.call__request:focus {
   color: red
 }
 
@@ -91,7 +93,8 @@ ul {
   transition: background-color .5s
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #ff153c
 }
 
@@ -101,7 +104,8 @@ ul {
   padding: 16px 50px
 }
 
-.button_transparent:hover {
+.button_transparent:hover,
+.button_transparent:focus {
   background-color: rgba(255, 51, 78, .3)
 }
 
@@ -386,7 +390,9 @@ ul {
   margin-bottom: 35px
 }
 
-.brends__img:hover {
+.brends__img:hover,
+.brends__img:focus,
+.brends__img:active {
   filter: none
 }
 
@@ -443,7 +449,8 @@ ul {
   border-color: transparent transparent transparent #fff
 }
 
-.btn-play:hover {
+.btn-play:hover,
+.btn-play:focus {
   opacity: .5
 }
 

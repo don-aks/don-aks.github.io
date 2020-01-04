@@ -93,7 +93,8 @@ body {
 	&_black {
 		border: 1px solid #000;
 		color: $color-text;
-		&:hover {
+		&:hover,
+		&:focus {
 			color: lighten($color-text, 10%);
 		}
 	}
@@ -121,7 +122,8 @@ body {
 			z-index: -1;
 			transition: opacity ease-in-out .5s;
 		}
-		&:hover::before {
+		&:hover::before,
+		&:focus::before {
 			opacity: 1;
 		}
 		// end hover effect
@@ -147,7 +149,8 @@ body {
 			fill: #fb2b2b;
 			opacity: 1;
 		}
-		&:hover {
+		&:hover,
+		&:focus {
 			opacity: 1;
 		}
 	}
@@ -237,10 +240,12 @@ body {
 				opacity: .2;
 				transition: all .3s;
 			}
-			&:hover {
+			&:hover,
+			&:focus {
 				color: #000;
 			}
-			&:hover::before {
+			&:hover::before,
+			&:focus::before {
 				opacity: 0.5;
 			}
 		}
@@ -332,14 +337,16 @@ body {
 	&__lnk {
 		transition: .5s;
 		border-bottom: 1px solid transparent;
-		&:hover {
+		&:hover,
+		&:focus {
 			color: saturate($color-text, 20%);
 			padding-bottom: 5px;
 			border-bottom: 1px solid saturate($color-text, 20%);
 		}
 		&_active {
 			color: $color-main;
-			&:hover {
+			&:hover,
+			&:focus {
 				color: saturate($color-main, 20%);
 				border-color: saturate($color-main, 20%);
 			}
