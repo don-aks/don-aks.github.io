@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1" height="77.5" viewBox="0 0 1 77.5">
+  <defs>
+    <style>
+      .a, .b {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke: url(#a);
+      }
+
+      .b {
+        stroke-dasharray: 6.76 2.9;
+      }
+    </style>
+    <linearGradient id="a" data-name="Безымянный градиент 14" x1="0.5" y1="77.5" x2="0.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.04" stop-color="#eee" stop-opacity="0.12"/>
+      <stop offset="0.15" stop-color="#c9c9c9" stop-opacity="0.39"/>
+      <stop offset="0.26" stop-color="#ababab" stop-opacity="0.61"/>
+      <stop offset="0.39" stop-color="#939393" stop-opacity="0.79"/>
+      <stop offset="0.54" stop-color="#838383" stop-opacity="0.91"/>
+      <stop offset="0.71" stop-color="#797979" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#767676"/>
+    </linearGradient>
+  </defs>
+  <title>Punktir-gradient</title>
+  <g>
+    <line class="a" x1="0.5" x2="0.5" y2="3.5"/>
+    <line class="b" x1="0.5" y1="6.4" x2="0.5" y2="72.55"/>
+    <line class="a" x1="0.5" y1="74" x2="0.5" y2="77.5"/>
+  </g>
+</svg>

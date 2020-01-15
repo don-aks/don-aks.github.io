@@ -1,0 +1,47 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+html, body{
+  height: 100%;
+  position: relative;
+}
+
+body {
+	color: #fff;
+	background-color: #1b1b1b;
+
+	font-size: 20px;
+	font-family: $font-main;
+	font-weight: 400;
+}
+
+.container {
+	max-width: 1110px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-weight: 400;
+	font-size: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}

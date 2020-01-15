@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1" height="77.5" viewBox="0 0 1 77.5">
+  <defs>
+    <style>
+      .a, .b {
+        fill: none;
+        stroke: #767676;
+        stroke-miterlimit: 10;
+      }
+
+      .b {
+        stroke-dasharray: 6.76 2.9;
+      }
+    </style>
+  </defs>
+  <title>Punktir</title>
+  <g>
+    <line class="a" x1="0.5" x2="0.5" y2="3.5"/>
+    <line class="b" x1="0.5" y1="6.4" x2="0.5" y2="72.55"/>
+    <line class="a" x1="0.5" y1="74" x2="0.5" y2="77.5"/>
+  </g>
+</svg>

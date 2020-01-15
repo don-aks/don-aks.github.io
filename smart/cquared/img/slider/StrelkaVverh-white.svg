@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5">
+  <defs>
+    <style>
+      .a {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>StrelkaVverh-white</title>
+  <path class="a" d="M58.73,34.23l5-5,5,5h-10Z" transform="translate(-58.73 -29.23)"/>
+</svg>

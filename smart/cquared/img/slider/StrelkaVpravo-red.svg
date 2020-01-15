@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #b7000e;
+        stroke-miterlimit: 10;
+      }
+
+      .b {
+        fill: #b7000e;
+      }
+    </style>
+  </defs>
+  <title>StrelkaVpravo-red</title>
+  <rect class="a" x="13.31" y="23.44" width="33" height="33" transform="translate(46.81 56.94) rotate(-180)"/>
+  <path class="b" d="M25.81,31.94l8,8-8,8v-16Z" transform="translate(-12.81 -22.94)"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+  <defs>
+    <style>
+      .a {
+        fill: #fff;
+      }
+
+      .b {
+        fill: #3f51b4;
+      }
+
+      .c {
+        fill: #fe3d00;
+      }
+    </style>
+  </defs>
+  <title>FlagRussia</title>
+  <path class="a" d="M96.59,107V103.7h14V107h-14Z" transform="translate(-96.59 -103.7)"/>
+  <path class="b" d="M96.59,107h14v3.34h-14V107Z" transform="translate(-96.59 -103.7)"/>
+  <path class="c" d="M96.59,110.37h14v3.33h-14v-3.33Z" transform="translate(-96.59 -103.7)"/>
+</svg>

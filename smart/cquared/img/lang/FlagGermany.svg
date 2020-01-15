@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+  <defs>
+    <style>
+      .a {
+        fill: #455a64;
+      }
+
+      .b {
+        fill: #fe3d00;
+      }
+
+      .c {
+        fill: #fec007;
+      }
+    </style>
+  </defs>
+  <title>FlagGermany</title>
+  <path class="a" d="M96.25,120v-3.32h14V120h-14Z" transform="translate(-96.25 -116.64)"/>
+  <path class="b" d="M96.25,120h14v3.37h-14V120Z" transform="translate(-96.25 -116.64)"/>
+  <path class="c" d="M96.25,123.32h14v3.32h-14v-3.32Z" transform="translate(-96.25 -116.64)"/>
+</svg>

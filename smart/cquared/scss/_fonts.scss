@@ -1,0 +1,65 @@
+@font-face {
+	font-family: "MagistralC";
+	font-weight: 400;
+	font-style: normal;
+	src: 	local(SourceSansPro),
+				url('../fonts/MagistralC.woff2') format('woff2'), 
+				url('../fonts/MagistralC.woff') format('woff'),
+				url('../fonts/MagistralC.ttf') format('ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SourceSansPro";
+	font-weight: 400;
+	font-style: normal;
+	src: 	local(SourceSansPro),
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.woff2') format('woff2'), 
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.woff') format('woff'),
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SourceSansPro";
+	font-weight: 700;
+	font-style: normal;
+	src: 	local(SourceSansPro-Bold),
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.woff2') format('woff2'), 
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.woff') format('woff'),
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 400;
+	font-style: normal;
+	src: 	local(Montserrat),
+				url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), 
+				url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+				url('../fonts/Montserrat/Montserrat-Regular.ttf') format('ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-style: normal;
+	src: 	local(Montserrat-Bold),
+				url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), 
+				url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+				url('../fonts/Montserrat/Montserrat-Bold.ttf') format('ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SourceSansPro";
+	font-weight: 300;
+	font-style: normal;
+	src: 	local(SourceSansPro-Light),
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Light.woff2') format('woff2'), 
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Light.woff') format('woff'),
+				url('../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf') format('ttf');
+	font-display: swap;
+}
