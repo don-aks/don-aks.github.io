@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cquared</title>
+	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -16,20 +17,6 @@
 						<img src="img/logo/logo.svg" alt="Cquared logo">
 					</div>
 				</a>
-			</div>
-			<div class="tools header-tools">
-				<div class="tools__tel-wrap header-tools__tel-wrap">
-					<a href="tel:+79006149797" class="link tools__tel header-tools__tel">
-						Тел. +7 (900) 614 - 97 - 97
-					</a>
-				</div>
-				<select name="lang" class="select-lang header__select-lang">
-					<option value="ru">RU</option>
-					<option value="en">EN</option>
-					<option value="de">DE</option>
-					<option value="ru">RU</option>
-					<option value="ru">RU</option>
-				</select>
 			</div>
 			<nav class="menu header-menu">
 				<ul class="header-menu__ul">
@@ -65,6 +52,20 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="tools header-tools">
+				<select name="lang" class="select-lang header__select-lang">
+					<option value="ru">RU</option>
+					<option value="en">EN</option>
+					<option value="de">DE</option>
+					<option value="ru">RU</option>
+					<option value="ru">RU</option>
+				</select>
+				<div class="tools__tel-wrap header-tools__tel-wrap">
+					<a href="tel:+79006149797" class="link tools__tel header-tools__tel">
+						Тел. +7 (900) 614 - 97 - 97
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
@@ -98,9 +99,11 @@
 			</div>
 		</div>
 		<div class="btn-wrap topscreen__btn-wrap">
-			<button class="btn topscreen__btn">
-				Оставить запрос
-			</button>
+			<div>
+				<a class="btn topscreen__btn" href="#request">
+					Оставить запрос
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -110,7 +113,7 @@
 		<h3 class="section-title progress__title">
 			Наши достижения
 		</h3>
-		<div class="progress__inner">
+		<div class="progress__inner wrapper-center-content">
 			<div class="progress__items items-flex">
 				<div class="progress-item">
 					<p class="progress-item__counter">
@@ -155,107 +158,117 @@
 		</div>
 	</div>
 </section>
-<section class="proposes">
+<section class="proposes section">
 	<div class="container">
 		<h3 class="section-title proposes__title">
 			Почему выбирают нас?
 		</h3>
-		<div class="items-grid proposes__inner">
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
+		<div class="proposes__inner wrapper-center-content">
+			<div class="proposes__row row row-flex-start">
+				<div class="proposes-item card">
+					<div class="img-wrap card__img-wrap proposes-item__img-wrap">
+						<img src="img/proposes/item1.svg" alt="Уникальность">
+					</div>
+					<div class="card__title proposes-item__title">
+						Уникальность
+					</div>
+					<p class="card__text proposes-item__text">
+						Исключительные решения для каждого клиента
+					</p>
 				</div>
-				<div class="card__title proposes-item__title">
-					Уникальность
+				<div class="proposes-item card">
+					<div class="img-wrap card__img-wrap proposes-item__img-wrap">
+						<img src="img/proposes/item2.svg" alt="Эффективность">
+					</div>
+					<div class="card__title proposes-item__title">
+						Эффективность
+					</div>
+					<p class="card__text proposes-item__text">
+						Повышаем продуктивность Вашего бизнеса за счёт  цифровизации процессов
+					</p>
 				</div>
-				<p class="card__text proposes-item__text">
-					Исключительные решения для каждого клиента
-				</p>
 			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
+			<div class="proposes__row row row-flex-start">
+				<div class="proposes-item card">
+					<div class="img-wrap card__img-wrap proposes-item__img-wrap">
+						<img src="img/proposes/item3.svg" alt="Ответственность">
+					</div>
+					<div class="card__title proposes-item__title">
+						Ответственность
+					</div>
+					<p class="card__text proposes-item__text">
+						Надёжный и легитимный подход к реализации проекта
+					</p>
 				</div>
-				<div class="card__title proposes-item__title">
-					Эффективность
+				<div class="proposes-item card">
+					<div class="img-wrap card__img-wrap proposes-item__img-wrap">
+						<img src="img/proposes/item4.svg" alt="Тестирование">
+					</div>
+					<div class="card__title proposes-item__title">
+						Тестирование
+					</div>
+					<p class="card__text proposes-item__text">
+						Внимание к деталям. Множественные тесты<br> перед реализацией
+					</p>
 				</div>
-				<p class="card__text proposes-item__text">
-					Повышаем продуктивность Вашего бизнеса за счёт  цифровизации процессов
-				</p>
+				<div class="proposes-item card">
+					<div class="img-wrap card__img-wrap proposes-item__img-wrap">
+						<img src="img/proposes/item5.svg" alt="Экономичность">
+					</div>
+					<div class="card__title proposes-item__title">
+						Экономичность
+					</div>
+					<p class="card__text proposes-item__text">
+						Вы платите только<br> за те услуги, которые<br> Вам действительно нужны
+					</p>
+				</div>
 			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
+			<div class="proposes__row row row-flex-end">
+				<div class="proposes-item card">
+					<div class="img-wrap card__img-wrap proposes-item__img-wrap">
+						<img src="img/proposes/item6.svg" alt="Инновационность">
+					</div>
+					<div class="card__title proposes-item__title">
+						Инновационность
+					</div>
+					<p class="card__text proposes-item__text">
+						Мы используем современные<br> технологии в проектах
+					</p>
 				</div>
-				<div class="card__title proposes-item__title">
-					Ответственность
+				<div class="proposes-item card">
+					<div class="img-wrap card__img-wrap proposes-item__img-wrap">
+						<img src="img/proposes/item7.svg" alt="Компетенция">
+					</div>
+					<div class="card__title proposes-item__title">
+						Компетенция
+					</div>
+					<p class="card__text proposes-item__text">
+						Знание современного рынка<br> информационных технологий
+					</p>
 				</div>
-				<p class="card__text proposes-item__text">
-					Надёжный и легитимный подход к реализации проекта
-				</p>
 			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
+			<div class="proposes__row row row-center">
+				<div class="proposes-item card">
+					<div class="img-wrap card__img-wrap proposes-item__img-wrap">
+						<img src="img/proposes/item8.svg" alt="Бонус">
+					</div>
+					<div class="card__title proposes-item__title">
+						Бонус
+					</div>
+					<p class="card__text proposes-item__text">
+						Бесплатный лендинг<br> за отзыв и пост в соцсетях
+					</p>
 				</div>
-				<div class="card__title proposes-item__title">
-					Тестирование
-				</div>
-				<p class="card__text proposes-item__text">
-					Внимание к деталям. Множественные тесты перед реализацией
-				</p>
-			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
-				</div>
-				<div class="card__title proposes-item__title">
-					Экономичность
-				</div>
-				<p class="card__text proposes-item__text">
-					Вы платите только за те услуги, которые Вам действительно нужны
-				</p>
-			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
-				</div>
-				<div class="card__title proposes-item__title">
-					Инновационность
-				</div>
-				<p class="card__text proposes-item__text">
-					Мы используем современные технологии в проектах
-				</p>
-			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
-				</div>
-				<div class="card__title proposes-item__title">
-					Компетенция
-				</div>
-				<p class="card__text proposes-item__text">
-					Знание современного рынка информационных технологий
-				</p>
-			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
-				</div>
-				<div class="card__title proposes-item__title">
-					Бонус
-				</div>
-				<p class="card__text proposes-item__text">
-					Бесплатный лендинг за отзыв и пост в соцсетях
-				</p>
 			</div>
 		</div>
-		<button class="btn proposes__btn">
-			Оставить запрос
-		</button>
+		<div class="btn-wrap proposes__btn-wrap">
+			<a class="btn proposes__btn" href="#request">
+				Оставить запрос
+			</a>
+		</div>
 	</div>
 </section>
-<section class="projects">
+<section class="projects section">
 	<div class="container">
 		<h3 class="section-title projects__title">
 			Наши реализованные проекты
@@ -263,131 +276,144 @@
 		<div class="slider projects__slider">
 			<div class="projects-item">
 				<div class="img-wrap projects-item__img-wrap">
-					<img src="" alt="" class="projects-item__img">
+					<img src="img/projects/item1.png" alt="Сайт для детской стоматологической поликлинике №43" class="projects-item__img">
 				</div>
 			</div>
 			<div class="projects-item">
 				<div class="img-wrap projects-item__img-wrap">
-					<img src="" alt="" class="projects-item__img">
+					<img src="img/projects/item2.png" alt="Сайт для детской стоматологической поликлинике №43" class="projects-item__img">
 				</div>
 			</div>
 			<div class="projects-item">
 				<div class="img-wrap projects-item__img-wrap">
-					<img src="" alt="" class="projects-item__img">
+					<img src="img/projects/item3.png" alt="Сайт для детской стоматологической поликлинике №43" class="projects-item__img">
 				</div>
 			</div>
 			<div class="projects-item">
 				<div class="img-wrap projects-item__img-wrap">
-					<img src="" alt="" class="projects-item__img">
+					<img src="img/projects/item4.png" alt="Сайт для детской стоматологической поликлинике №43" class="projects-item__img">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="reviews">
+<section class="reviews section">
 	<div class="container">
 		<h3 class="section-title reviews__title">
 			Отзывы
 		</h3>
-		<div class="slider reviews__slider">
-			<div class="reviews-item card">
-				<p class="reviews-item__text">
-					Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
-				</p>
-				<p class="reviews-item__author">
-					Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
-				</p>
+		<div class="reviews__inner">
+			<div class="slider reviews__slider">
+				<div class="reviews-item">
+					<p class="reviews-item__text">
+						Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
+					</p>
+					<p class="reviews-item__author">
+						Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
+					</p>
+				</div>
+				<div class="reviews-item">
+					<p class="reviews-item__text">
+						Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
+					</p>
+					<p class="reviews-item__author">
+						Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
+					</p>
+				</div>
+				<div class="reviews-item">
+					<p class="reviews-item__text">
+						Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
+					</p>
+					<p class="reviews-item__author">
+						Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
+					</p>
+				</div>
+				<div class="reviews-item">
+					<p class="reviews-item__text">
+						Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
+					</p>
+					<p class="reviews-item__author">
+						Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
+					</p>
+				</div>
 			</div>
-			<div class="reviews-item card">
-				<p class="reviews-item__text">
-					Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
-				</p>
-				<p class="reviews-item__author">
-					Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
-				</p>
-			</div>
-			<div class="reviews-item card">
-				<p class="reviews-item__text">
-					Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
-				</p>
-				<p class="reviews-item__author">
-					Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
-				</p>
-			</div>
-			<div class="reviews-item card">
-				<p class="reviews-item__text">
-					Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
-				</p>
-				<p class="reviews-item__author">
-					Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
-				</p>
+			<div class="btn-wrap reviews__btn-wrap">
+				<a class="btn reviews__btn" href="#request">
+					Оставить запрос
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="process">
+<section class="process section">
 	<div class="container">
-		<h3 class="section-title process__title">Процесс</h3>
-		<div class="items-grid process__inner">
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
+		<h3 class="section-title process__title">
+			Процесс
+		</h3>
+		<div class="process__inner wrapper-center-content">
+			<div class="process__row">
+				<div class="process-item process-item-1 card">
+					<div class="img-wrap card__img-wrap process-item__img-wrap">
+						<img src="img/process/item1.svg" alt="Запрос">
+					</div>
+					<div class="card__title process-item__title">
+						Запрос
+					</div>
+					<p class="card__text process-item__text">
+						Вы заполняете форму запроса на проект
+					</p>
 				</div>
-				<div class="card__title proposes-item__title">
-					Запрос
+				<div class="process-item process-item-2 card">
+					<div class="img-wrap card__img-wrap process-item__img-wrap">
+						<img src="img/process/item2.svg" alt="Переговоры">
+					</div>
+					<div class="card__title process-item__title">
+						Переговоры
+					</div>
+					<p class="card__text process-item__text">
+						Мы уточняем особые детали<br> и условия
+					</p>
 				</div>
-				<p class="card__text proposes-item__text">
-					Вы заполняете форму запроса на проект
-				</p>
+				<div class="process-item process-item-3 card">
+					<div class="img-wrap card__img-wrap process-item__img-wrap">
+						<img src="img/process/item3.svg" alt="Договор">
+					</div>
+					<div class="card__title process-item__title">
+						Договор
+					</div>
+					<p class="card__text process-item__text">
+						Подписываем с Вами<br> договор об оказании услуг
+					</p>
+				</div>
 			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
+			<div class="process-item process-item-4 card">
+				<div class="img-wrap card__img-wrap process-item__img-wrap">
+					<img src="img/process/item4.svg" alt="Исполнение">
 				</div>
-				<div class="card__title proposes-item__title">
-					Переговоры
-				</div>
-				<p class="card__text proposes-item__text">
-					Мы уточняем особые детали и условия
-				</p>
-			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
-				</div>
-				<div class="card__title proposes-item__title">
-					Договор
-				</div>
-				<p class="card__text proposes-item__text">
-					Подписываем с Вами договор об оказании услуг
-				</p>
-			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
-				</div>
-				<div class="card__title proposes-item__title">
+				<div class="card__title process-item__title">
 					Исполнение
 				</div>
-				<p class="card__text proposes-item__text">
-					Наша команда работает над Вашим проектом
+				<p class="card__text process-item__text">
+					Наша команда работает<br> над Вашим проектом
 				</p>
 			</div>
-			<div class="proposes-item card item-grid__item">
-				<div class="img-wrap card__img-wrap proposes-item__img-wrap">
-					<img src="" alt="">
+			<div class="process-item process-item-5 card">
+				<div class="img-wrap card__img-wrap process-item__img-wrap">
+					<img src="img/process/item5.svg" alt="Презентация">
 				</div>
-				<div class="card__title proposes-item__title">
+				<div class="card__title process-item__title">
 					Презентация
 				</div>
-				<p class="card__text proposes-item__text">
+				<p class="card__text process-item__text">
 					Мы демонстрируем результат и завершаем проект
 				</p>
 			</div>
 		</div>
-		<button class="btn process__btn">
-			Оставить запрос
-		</button>
+		<div class="btn-wrap process__btn-wrap">
+			<a class="btn process__btn" href="#request">
+				Оставить запрос
+			</a>
+		</div>
 	</div>
 </section>
 <section class="partners">
@@ -395,60 +421,72 @@
 		<h3 class="section-title partners__title">
 			Наши клиенты
 		</h3>
-		<div class="partners__inner">
+		<div class="partners__inner items-flex">
 			<div class="partners-item">
-				<div class="img-wrap">
-					<img src="" alt="">
+				<div class="partners-item__img-wrap img-wrap">
+					<img src="img/partners/item1.svg" alt="Ростех">
 				</div>
 			</div>
 			<div class="partners-item">
-				<div class="img-wrap">
-					<img src="" alt="">
+				<div class="partners-item__img-wrap img-wrap">
+					<img src="img/partners/item2.svg" alt="Cquered design">
 				</div>
 			</div>
 			<div class="partners-item">
-				<div class="img-wrap">
-					<img src="" alt="">
+				<div class="partners-item__img-wrap img-wrap">
+					<img src="img/partners/item3.svg" alt="Детская стоматологическая поликлиника №43">
 				</div>
 			</div>
 			<div class="partners-item">
-				<div class="img-wrap">
-					<img src="" alt="">
+				<div class="partners-item__img-wrap img-wrap">
+					<img src="img/partners/item4.svg" alt="*Компания*">
 				</div>
 			</div>
 			<div class="partners-item">
-				<div class="img-wrap">
-					<img src="" alt="">
+				<div class="partners-item__img-wrap img-wrap">
+					<img src="img/partners/item5.svg" alt="Американские курсы практической стоматологии">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="request">
+<section class="request" id="request">
 	<div class="container">
 		<h3 class="section-title request__title">
 			Заполните запрос на проект
 		</h3>
-		<form action="#" class="form request-form">
-			<div class="form__col">
-				<input type="text" name="name" class="form__input request-form__input" placeholder="Ваше имя*">
-				<input type="email" name="email" class="form__input request-form__input" placeholder="Ваш Email*">
-				<input type="tel" name="tel" class="form__input request-form__input" placeholder="Ваш номер телефона">
-			</div>
-			<div class="form__col">
-				<textarea name="" class="form__textarea request-form__textarea" placeholder="Ваш запрос*"></textarea>
-			</div>
-			<p class="request-form__descr">
-				<span class="mark">*</span> Поля обязательные для заполнения
-			</p>
-			<label class="form__label-checkbox request-form__label-checkbox">
-				<input type="checkbox">
-				Согласен с <a href="polit_konf.doc" class="link request-form__link">Политикой конфеденциальности</a>
-			</label>
-			<button class="btn btn_silver request-form__btn" type="submit">
-				Отправить запрос
-			</button>
-		</form>
+		<div class="request__inner wrapper-center-content">
+			<form action="#" class="form request-form">
+				<div class="request-form__row items-flex">
+					<div class="request-form__col request-form__col-inputs">
+						<label class="form__label form__label-input">
+							<input type="text" name="name" class="form__input request-form__input input-with-fake-placeholder" placeholder="Ваше имя*">
+						</label>
+						<label class="form__label form__label-input">
+							<input type="email" name="email" class="form__input request-form__input input-with-fake-placeholder" placeholder="Ваш Email*">
+						</label>
+						<label class="form__label form__label-input">
+							<input type="tel" name="telephone" class="form__input request-form__input" placeholder="Ваш номер телефона">
+						</label>
+					</div>
+					<div class="request-form__col form__col">
+						<label class="form__label form__label-textarea">
+							<textarea name="description" class="form__textarea request-form__textarea" placeholder="Ваш запрос*"></textarea>
+						</label>
+					</div>
+				</div>
+				<p class="request-form__descr">
+					<span class="mark">*</span> Поля обязательные для заполнения
+				</p>
+				<label class="form__label form__label-checkbox request-form__label-checkbox">
+					<input type="checkbox">
+					Согласен с <a href="polit_konf.doc" class="link link_red request-form__link">Политикой конфеденциальности</a>
+				</label>
+				<button class="btn btn_invalid request-form__btn" type="submit">
+					Отправить запрос
+				</button>
+			</form>
+		</div>
 	</div>
 </section>
 <section class="contacts">
@@ -459,5 +497,11 @@
 
 	</div>
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="js/libs/slick.min.js"></script>
+
+<script src="js/main.min.js"></script>
 </body>
 </html>
