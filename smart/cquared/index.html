@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Cquared</title>
@@ -460,10 +460,10 @@
 				<div class="request-form__row items-flex">
 					<div class="request-form__col request-form__col-inputs">
 						<label class="form__label form__label-input">
-							<input type="text" name="name" class="form__input request-form__input input-with-fake-placeholder" placeholder="Ваше имя*">
+							<input type="text" name="name" class="form__input request-form__input element-with-fake-placeholder" placeholder="Ваше имя*">
 						</label>
 						<label class="form__label form__label-input">
-							<input type="email" name="email" class="form__input request-form__input input-with-fake-placeholder" placeholder="Ваш Email*">
+							<input type="email" name="email" class="form__input request-form__input element-with-fake-placeholder" placeholder="Ваш Email*">
 						</label>
 						<label class="form__label form__label-input">
 							<input type="tel" name="telephone" class="form__input request-form__input" placeholder="Ваш номер телефона">
@@ -471,7 +471,7 @@
 					</div>
 					<div class="request-form__col form__col">
 						<label class="form__label form__label-textarea">
-							<textarea name="description" class="form__textarea request-form__textarea" placeholder="Ваш запрос*"></textarea>
+							<textarea name="description" class="form__textarea request-form__textarea element-with-fake-placeholder" placeholder="Ваш запрос*"></textarea>
 						</label>
 					</div>
 				</div>
@@ -494,14 +494,118 @@
 		<h3 class="section-title contacts__title">
 			Контакты
 		</h3>
-
+		<div class="contacts__inner items-flex">
+			<div class="contacts__data-wrap">
+				<p class="section-text">
+					Свяжитесь с нами любым<br> удобным способом
+				</p>
+				<div class="contacts-data">
+					<div class="contacts-data-item">
+						<div class="img-wrap contacts-data-item__icon-wrap">
+							<img src="img/contacts/tel.svg" alt="Phone" class="contacts-data-item__icon">
+						</div>
+						<p class="contacts-data-item__text">
+							<a href="tel:+79006149797" class="link contacts-data-item__lnk">
+								+7 (900) 614 - 97 - 97
+							</a>
+						</p>
+					</div>
+					<div class="contacts-data-item">
+						<div class="img-wrap contacts-data-item__icon-wrap">
+							<img src="img/contacts/mail.svg" alt="Email" class="contacts-data-item__icon">
+						</div>
+						<p class="contacts-data-item__text">
+							<a href="mailto:info@сquared.com" class="link contacts-data-item__lnk">
+								info@сquared.com
+							</a>
+						</p>
+					</div>
+					<div class="contacts-data-item">
+						<div class="img-wrap contacts-data-item__icon-wrap">
+							<img src="img/contacts/map.svg" alt="Map" class="contacts-data-item__icon">
+						</div>
+						<p class="contacts-data-item__text">
+							Москва, Варшавское ш., д. 39
+						</p>
+					</div>
+				</div>
+				<button class="btn contacts__btn">
+					Связаться с нами
+				</button>
+			</div>
+			<div class="contacts-map">
+				<iframe src="https://snazzymaps.com/embed/97237" class="contacts-map__iframe"></iframe>
+			</div>
+		</div>
 	</div>
 </section>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner wrapper-center-content">
+			<div class="footer__logotypes logo">
+				<div class="footer__current-logo-wrap img-wrap logo__img-wrap">
+					<a href="#">
+						<img src="img/logo/logo.svg" alt="Cquared logo" class="footer__current-logo">
+					</a>
+				</div>
+				<div class="footer__other-logo-wrap logo__other-logo-wrap">
+					<div class="footer__other-logo img-wrap logo__img-wrap logo__other-logo">
+						<a href="#">
+							<img src="img/logo/smartOffice.svg" alt="Smart Office logo" class="footer__other-logo">
+						</a>
+					</div>
+					<div class="footer__other-logo img-wrap logo__img-wrap logo__other-logo">
+						<a href="#">
+							<img src="img/logo/pcbuild.svg" alt="PC Build logo" class="footer__other-logo">
+						</a>
+					</div>
+				</div>
+			</div>
+			<nav class="menu footer-menu">
+				<ul class="footer-menu__ul">
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu-link link">
+							О компании
+						</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu-link link">
+							Отзывы
+						</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu-link link">
+							Почему мы?
+						</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu-link link">
+							Процесс
+						</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu-link link">
+							Проекты
+						</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu-link link">
+							Клиенты
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<p class="footer__copyright">
+			Copyright © 2020 Сquared
+		</p>
+	</div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="js/libs/slick.min.js"></script>
 
-<script src="js/main.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

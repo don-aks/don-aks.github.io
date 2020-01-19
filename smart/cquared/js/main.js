@@ -4,14 +4,33 @@ $(function() {
 		lazyLoad: 'ondemand'
 	});
 
-	let $inputFakePlaceholder = $(".input-with-fake-placeholder"),	wrapperAsterisk = '<span class="mark"></span>',
-			wrapperFakePlaceholder = '<span class="fake-placeholder"></span>';
+	let $elemFakePlaceholder = $(".element-with-fake-placeholder");
 
-	$.each($inputFakePlaceholder, function (_, $input) {
+	$.each($elemFakePlaceholder, function (_, $input) {
 		$input = $($input);
-		let placeholder = $input.attr('placeholder');
-		$input.parent().prepend(wrapperFakePlaceholder);
-		// $input.parent().prepend(placeholder).wrap(wrapper);
+		let $parent = $input.parent(),
+				placeholder = $input.attr('placeholder');
+
+		$parent.prepend('<span class="fake-placeholder"></span>');
+
+		if (placeholder.indexOf('*') + 1) {
+			placeholder = placeholder.replace(/\*/g, '<span class="mark">*</span>');
+		}
+
+		$parent.find('.fake-placeholder').html(placeholder);
 		$input.attr('placeholder', '');
-	})
+	});
+
+	$elemFakePlaceholder.on('change keyup input', function() {
+		let $fakePlaceholder = $(this).parent().find('.fake-placeholder');
+		if ($(this).val() == '') {
+			$fakePlaceholder.show();
+			return;
+		}
+		$fakePlaceholder.hide();
+	});
+
+	$('.fake-placeholder').on('mousedown selectstart', function() {
+		$(this).parent().find('input textarea').focus();
+	});
 });
