@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cquared</title>
-	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -108,6 +107,7 @@
 	</div>
 </section>
 </div>
+<main role="main">
 <section class="progress">
 	<div class="container">
 		<h3 class="section-title progress__title">
@@ -158,7 +158,7 @@
 		</div>
 	</div>
 </section>
-<section class="proposes section">
+<section class="proposes section bg-box-shadow">
 	<div class="container">
 		<h3 class="section-title proposes__title">
 			Почему выбирают нас?
@@ -268,7 +268,7 @@
 		</div>
 	</div>
 </section>
-<section class="projects section">
+<section class="projects section ">
 	<div class="container">
 		<h3 class="section-title projects__title">
 			Наши реализованные проекты
@@ -297,7 +297,7 @@
 		</div>
 	</div>
 </section>
-<section class="reviews section">
+<section class="reviews section bg-box-shadow">
 	<div class="container">
 		<h3 class="section-title reviews__title">
 			Отзывы
@@ -306,7 +306,7 @@
 			<div class="slider reviews__slider">
 				<div class="reviews-item">
 					<p class="reviews-item__text">
-						Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
+						Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
 					</p>
 					<p class="reviews-item__author">
 						Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
@@ -314,7 +314,7 @@
 				</div>
 				<div class="reviews-item">
 					<p class="reviews-item__text">
-						Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
+						Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
 					</p>
 					<p class="reviews-item__author">
 						Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
@@ -322,7 +322,7 @@
 				</div>
 				<div class="reviews-item">
 					<p class="reviews-item__text">
-						Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
+						Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Знаках назад великий собрал свой большой маленький своего возвращайся живет.
 					</p>
 					<p class="reviews-item__author">
 						Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
@@ -330,7 +330,7 @@
 				</div>
 				<div class="reviews-item">
 					<p class="reviews-item__text">
-						Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный. Отзыв клиента о том, как всё было замечательно реализовано. Лучше всего реальный.
+						Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
 					</p>
 					<p class="reviews-item__author">
 						Имя того, кто оставил отзыв, можно привязать ссылку на реальный отзыв в Сети
@@ -345,7 +345,7 @@
 		</div>
 	</div>
 </section>
-<section class="process section">
+<section class="process section bg-box-shadow">
 	<div class="container">
 		<h3 class="section-title process__title">
 			Процесс
@@ -450,7 +450,7 @@
 		</div>
 	</div>
 </section>
-<section class="request" id="request">
+<section class="request bg-box-shadow" id="request">
 	<div class="container">
 		<h3 class="section-title request__title">
 			Заполните запрос на проект
@@ -479,8 +479,9 @@
 					<span class="mark">*</span> Поля обязательные для заполнения
 				</p>
 				<label class="form__label form__label-checkbox request-form__label-checkbox">
-					<input type="checkbox">
-					Согласен с <a href="polit_konf.doc" class="link link_red request-form__link">Политикой конфеденциальности</a>
+					<input type="checkbox" class="form__input-checkbox">
+					<span class="form__check"></span>
+					Согласен с <a href="polit_konf.doc" class="link link_colored request-form__link">Политикой конфеденциальности</a>
 				</label>
 				<button class="btn btn_invalid request-form__btn" type="submit">
 					Отправить запрос
@@ -539,7 +540,7 @@
 		</div>
 	</div>
 </section>
-<footer class="footer">
+<footer class="footer bg-box-shadow">
 	<div class="container">
 		<div class="footer__inner wrapper-center-content">
 			<div class="footer__logotypes logo">
@@ -556,7 +557,7 @@
 					</div>
 					<div class="footer__other-logo img-wrap logo__img-wrap logo__other-logo">
 						<a href="#">
-							<img src="img/logo/pcbuild.svg" alt="PC Build logo" class="footer__other-logo">
+							<img src="img/logo/PCBuild.svg" alt="PC Build logo" class="footer__other-logo">
 						</a>
 					</div>
 				</div>
@@ -601,10 +602,11 @@
 		</p>
 	</div>
 </footer>
+</main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="js/libs/slick.min.js"></script>
+<script src="libs/slick.min.js"></script>
 
 <script src="js/main.js"></script>
 </body>

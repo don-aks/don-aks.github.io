@@ -1,4 +1,6 @@
-@import '../css/normalize';
+@import '../css/normalize.css';
+
+@import '../libs/slick.min.css';
 
 @import '_vars';
 @import '_fonts';
@@ -13,17 +15,17 @@
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color-second;
+		color: $color-main-second;
 		outline: 0;
 	}
 
-	&_red {
-		color: $color-second;
+	&_colored {
+		color: $color-main-second;
 
 		&:hover,
 		&:focus,
 		&:active {
-			color: lighten($color-second, 7%);
+			color: lighten($color-second, 20%);
 			outline: 0;
 		}
 	}
@@ -76,11 +78,10 @@
 		}
 		// end hover effect
 
-		&_invalid {
+		&:disabled {
 			background: #767676;
 			color: #1b1b1b;
-
-			cursor: not-allowed;
+			transition: .5s;
 
 			&:hover {
 				background: darken(#767676, 10%);
@@ -255,6 +256,10 @@ button.btn {
 
 			padding: 0;
 			cursor: pointer;
+
+			&:focus {
+				outline: $color-main 1px solid;
+			}
 		}
 
 		.slick-active button {
@@ -337,12 +342,12 @@ button.btn {
 
 	&__input,
 	&__textarea {
-		border: 0;
 		outline: 0;
 		background: #fff;
 		box-shadow: 0 3px 7px 0 rgba(#000, 0.35);
 
 		color: #000;
+		border: 1px solid transparent;
 	}
 
 	&__input {
@@ -380,6 +385,46 @@ button.btn {
 		color: #656565;
 		font-size: 15px;
 	}
+
+	// CHECKBOX //
+
+	&__input-checkbox {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+
+		&:checked + .form__check {
+			background-image: url("../img/form/checked.svg");
+		}
+
+		&:disabled + .form__check {
+			background-color: rgba(#000, 0.5);
+		}
+
+		&:focus + .form__check {
+			outline: 1px solid $color-main;
+		}
+	}
+
+	&__check {
+		width: 33px;
+		height: 33px;
+
+		position: absolute;
+    margin: -6px 0 0 -50px;
+
+		overflow: hidden;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		border: 1px solid #000;
+	}
+
+	&__label-checkbox {
+		padding-left: 50px;
+	}
 }
 
 
@@ -390,6 +435,11 @@ button.btn {
 
 .topscreen-wrap {
 	background: url(../img/topscreen/bg.jpg) no-repeat 50% 26%;
+	box-shadow: inset 0 -35px 40px 0 #1b1b1b,
+	    				inset 0 35px 40px 0 #1b1b1b;
+
+	
+	height: 100vh;
 }
 
 
@@ -479,7 +529,7 @@ button.btn {
 			font-family: $font-title;
 			font-size: 30px;
 			font-weight: 700;
-			color: $color-main;
+			color: $color-main-second;
 
 			margin-bottom: 20px;
 		}
@@ -521,8 +571,9 @@ button.btn {
 
 
 .reviews {
-	background: url("../img/reviews/bg.png") no-repeat 0 0;
-	background-size: cover;
+	background: url("../img/reviews/bg.png") no-repeat 0 50%;
+
+	padding-top: 120px;
 
 	&__inner {
 		max-width: 445px;
@@ -532,13 +583,13 @@ button.btn {
 
 	&__slider {
 		box-shadow: 0 0 7px 0 #fff;
+		background-color: rgba(27, 27, 27, .7);
 	}
 
 	&-item {
 		line-height: 20px;
 
 		padding: 45px 95px 50px;
-		background-color: rgba(27, 27, 27, .7);
 
 		&__text {
 			font-size: 18px;
@@ -572,6 +623,10 @@ button.btn {
 .process {
 	background: url("../img/process/bg.png") no-repeat 50% 0;
 	background-size: cover;
+	box-shadow: inset 0 -150px 40px 0 #1b1b1b,
+	    				inset 0 150px 40px 0 #1b1b1b;
+
+	padding-top: 65px;
 
 	&__row {
 		display: flex;
@@ -710,6 +765,7 @@ button.btn {
 .footer {
 	background: url("../img/footer/bg.png") no-repeat 50% 0;
 	background-size: cover;
+	box-shadow: inset 0 67px 40px 0 #1b1b1b;
 
 	padding-top: 190px;
 
