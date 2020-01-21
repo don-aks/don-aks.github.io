@@ -6,6 +6,12 @@ $(function() {
 
 	let $elemFakePlaceholder = $(".element-with-fake-placeholder");
 
+	// FORM ELEMENTS
+
+	$("input[type=tel].js-mask").mask("+7 (nnn) nnn-nn-nn");
+
+	// Fake placeholder
+
 	$.each($elemFakePlaceholder, function (_, $input) {
 		$input = $($input);
 		let $parent = $input.parent(),
@@ -33,4 +39,23 @@ $(function() {
 	$('.fake-placeholder').on('mousedown selectstart', function() {
 		$(this).parent().find('input textarea').focus();
 	});
+
+	// end Fake placeholder
+
+	// Disabled button
+
+	$form = $('.js-form-with-btn-disabled');
+	$form.children('button[type=submit]').attr('disabled', '');
+	$form.on('change', 'input, textarea', function() {
+		if (!$(this).valid()) {
+			$form.children('button[type=submit]').attr('disabled');
+		} else {
+			$form.children('button[type=submit]').removeAttr('disabled');
+		};
+	});
+
+
+	// end Disabled button
+
+	// end FORM ELEMENTS
 });

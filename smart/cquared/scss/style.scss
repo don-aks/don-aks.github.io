@@ -48,8 +48,7 @@
 	cursor: pointer;
 
 	// start hover effect
-		// smooth gradient change
-			// (плавная смена градиента)
+		// (плавная смена градиента)
 		transition: opacity ease-in-out .5s;
 
 		position: relative;
@@ -125,7 +124,7 @@ button.btn {
 	width: 68px;
 	height: 68px;
 
-	box-shadow: 2px 3px 7px 0px rgba(#000, 0.35);
+	box-shadow: 2px 3px 7px 0 rgba(#000, 0.35);
 	}
 }
 
@@ -440,6 +439,7 @@ button.btn {
 
 	
 	height: 100vh;
+	min-height: 800px;
 }
 
 
@@ -470,6 +470,11 @@ button.btn {
 			margin-left: 45px;
 		}
 	}
+
+	&-logo__img-wrap {
+		box-shadow: 2px 3px 7px 0 rgba(#000, .35),
+								-5px 0 50px 10px rgba($color-main, .8);
+	}
 }
 
 
@@ -498,6 +503,10 @@ button.btn {
 
 		&-item {
 			max-width: 220px;
+
+			&:nth-child(2) {
+
+			}
 
 			&__img-wrap {
 				margin-bottom: 25px;
@@ -700,6 +709,16 @@ button.btn {
 		&__btn {
 			display: block;
 			margin: 0 auto;
+		}
+
+		&__row {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__col +
+		&__col {
+			margin-left: 20px;
 		}
 	}
 }

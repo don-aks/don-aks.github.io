@@ -456,22 +456,22 @@
 			Заполните запрос на проект
 		</h3>
 		<div class="request__inner wrapper-center-content">
-			<form action="#" class="form request-form">
-				<div class="request-form__row items-flex">
+			<form action="#" class="form request-form js-form-with-btn-disabled">
+				<div class="request-form__row">
 					<div class="request-form__col request-form__col-inputs">
 						<label class="form__label form__label-input">
-							<input type="text" name="name" class="form__input request-form__input element-with-fake-placeholder" placeholder="Ваше имя*">
+							<input type="text" name="name" class="form__input request-form__input element-with-fake-placeholder" placeholder="Ваше имя*" required>
 						</label>
 						<label class="form__label form__label-input">
-							<input type="email" name="email" class="form__input request-form__input element-with-fake-placeholder" placeholder="Ваш Email*">
+							<input type="email" name="email" class="form__input request-form__input element-with-fake-placeholder" placeholder="Ваш Email*" required>
 						</label>
 						<label class="form__label form__label-input">
-							<input type="tel" name="telephone" class="form__input request-form__input" placeholder="Ваш номер телефона">
+							<input type="tel" name="telephone" class="form__input request-form__input js-mask" placeholder="Ваш номер телефона">
 						</label>
 					</div>
 					<div class="request-form__col form__col">
 						<label class="form__label form__label-textarea">
-							<textarea name="description" class="form__textarea request-form__textarea element-with-fake-placeholder" placeholder="Ваш запрос*"></textarea>
+							<textarea name="description" class="form__textarea request-form__textarea element-with-fake-placeholder" placeholder="Ваш запрос*" required></textarea>
 						</label>
 					</div>
 				</div>
@@ -479,7 +479,7 @@
 					<span class="mark">*</span> Поля обязательные для заполнения
 				</p>
 				<label class="form__label form__label-checkbox request-form__label-checkbox">
-					<input type="checkbox" class="form__input-checkbox">
+					<input type="checkbox" class="form__input-checkbox" required>
 					<span class="form__check"></span>
 					Согласен с <a href="polit_konf.doc" class="link link_colored request-form__link">Политикой конфеденциальности</a>
 				</label>
@@ -530,9 +530,11 @@
 						</p>
 					</div>
 				</div>
-				<button class="btn contacts__btn">
-					Связаться с нами
-				</button>
+				<div>
+					<a class="btn contacts__btn" href="#request">
+						Связаться с нами
+					</a>
+				</div>
 			</div>
 			<div class="contacts-map">
 				<iframe src="https://snazzymaps.com/embed/97237" class="contacts-map__iframe"></iframe>
@@ -607,6 +609,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="libs/slick.min.js"></script>
+<script src="libs/jquery.maskedinput.min.js"></script>
 
 <script src="js/main.js"></script>
 </body>
