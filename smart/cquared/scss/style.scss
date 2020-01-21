@@ -382,6 +382,8 @@ button.btn {
 	&__input::placeholder,
 	&__textarea::placeholder {
 		color: #656565;
+		opacity: 1;
+		
 		font-size: 15px;
 	}
 
