@@ -49,7 +49,7 @@
 
 	// start hover effect
 		// (плавная смена градиента)
-		transition: opacity ease-in-out .5s;
+		transition: ease-in-out .5s;
 
 		position: relative;
 		z-index: 1;
@@ -81,11 +81,7 @@
 			background: #767676;
 			color: #1b1b1b;
 			transition: .5s;
-
-			&:hover {
-				background: darken(#767676, 10%);
-				color: lighten(#1b1b1b, 10%);
-			}
+			cursor: not-allowed;
 
 			&::before {
 				display: none;
@@ -159,6 +155,7 @@ button.btn {
 	font-size: 30px;
 	font-weight: 700;
 	text-align: center;
+	line-height: 45px;
 
 	margin-bottom: 95px;
 }
@@ -225,6 +222,7 @@ button.btn {
 
 .slider {
 	position: relative;
+	width: 100%;
 	
 	.slick-dots {
 		list-style: none;
@@ -368,6 +366,7 @@ button.btn {
 		left: 12px;
 
     color: #656565;
+    font-size: 15px !important;
 		
 		-webkit-user-select: none;
     -moz-user-select: none;
@@ -424,7 +423,7 @@ button.btn {
 	}
 
 	&__label-checkbox {
-		padding-left: 50px;
+		padding-left: 43px;
 	}
 }
 
@@ -435,7 +434,7 @@ button.btn {
 //////////////// SECTIONS ////////////////
 
 .topscreen-wrap {
-	background: url(../img/topscreen/bg.jpg) no-repeat 50% 26%;
+	background: url(../img/topscreen/bg.jpg) no-repeat 50% -200px;
 	box-shadow: inset 0 -35px 40px 0 #1b1b1b,
 	    				inset 0 35px 40px 0 #1b1b1b;
 
@@ -470,6 +469,7 @@ button.btn {
 
 		&__tel-wrap {
 			margin-left: 45px;
+			order: 1;
 		}
 	}
 
@@ -477,6 +477,14 @@ button.btn {
 		box-shadow: 2px 3px 7px 0 rgba(#000, .35),
 								-5px 0 50px 10px rgba($color-main, .8);
 	}
+
+	&__select-lang {
+		width: 50px;
+	}
+}
+
+.header-mobile-menu {
+	display: none;
 }
 
 
@@ -506,8 +514,8 @@ button.btn {
 		&-item {
 			max-width: 220px;
 
-			&:nth-child(2) {
-
+			&:nth-child(2) .img-wrap {
+				margin-top: -10px;
 			}
 
 			&__img-wrap {
@@ -526,6 +534,7 @@ button.btn {
 	padding-bottom: 500px;
 
 	font-size: 20px;
+	line-height: 25px;
 
 	&__items {
 		margin-bottom: 130px;
@@ -602,6 +611,8 @@ button.btn {
 
 		padding: 45px 95px 50px;
 
+    user-select: text;
+
 		&__text {
 			font-size: 18px;
 			line-height: 22px;
@@ -648,11 +659,11 @@ button.btn {
 		
 
 		&-2 {
-			margin: 108px 0 0 20px;
+			margin: 108px 0 0 auto;
 		}
 
 		&-3 {
-			margin: 216px 0 0 20px;
+			margin: 216px 0 0 auto;
 		}
 
 		&-4 {
@@ -672,10 +683,12 @@ button.btn {
 
 	&__inner {
 		align-items: flex-end;
+		flex-wrap: nowrap;
 	}
 
 	&-item {
-		max-width: 190px;
+		max-width: 190px; 
+		margin: 0 5px;
 
 		img {
 			margin: 0;
@@ -828,5 +841,9 @@ button.btn {
 
 
 // Stop write code
+
+.img-mobile {
+	display: none !important;
+}
 
 @import 'media';

@@ -1,14 +1,33 @@
 $(function() {
-	$('.slider').slick({
-		dots: true,
-		lazyLoad: 'ondemand'
+
+	const numberWithAnim = $(".number-with-anim"),
+				section = $('section.progress'),
+				sectionPosition = section.offset().top;
+
+	$(window).bind('scroll', function() {
+		if ( $(this).scrollTop() + 300 > sectionPosition ) {
+			numberWithAnim.spincrement({
+				duration: 5000
+			});
+
+			$(window).unbind('scroll');
+		}
 	});
 
-	let $elemFakePlaceholder = $(".element-with-fake-placeholder");
+	
+
+	$('.slider').slick({
+		dots: true,
+		lazyLoad: 'ondemand',
+		autoplay: true,
+		autoplaySpeed: 4000
+	});
 
 	// FORM ELEMENTS
 
 	$("input[type=tel].js-mask").mask("+7 (nnn) nnn-nn-nn");
+
+	let $elemFakePlaceholder = $(".element-with-fake-placeholder");
 
 	// Fake placeholder
 
@@ -42,13 +61,14 @@ $(function() {
 
 	// end Fake placeholder
 
-	// Disabled button
+	/*! form valid */
 
 	$form = $('.js-form-with-btn-disabled');
 	$form.children('button[type=submit]').attr('disabled', '');
+
 	$form.on('change', 'input, textarea', function() {
-		if (!$(this).valid()) {
-			$form.children('button[type=submit]').attr('disabled');
+		if ( !$(this).isValid() ) {
+			$form.children('button[type=submit]').attr('disabled', '');
 		} else {
 			$form.children('button[type=submit]').removeAttr('disabled');
 		};
@@ -58,4 +78,16 @@ $(function() {
 	// end Disabled button
 
 	// end FORM ELEMENTS
+
+	$('.js-scroll').on('click', function() {
+		event.preventDefault();
+		console.log('click');
+
+		let idBlock = $(this).attr('href'),
+				blockPosition = $(idBlock).offset().top;
+
+		$('body,html').animate(
+			{scrollTop: blockPosition}, 1000
+		);
+	});
 });
