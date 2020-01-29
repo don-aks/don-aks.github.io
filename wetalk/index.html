@@ -22,7 +22,7 @@
 				</a>
 			</div>
 			<nav class="menu header-menu">
-				<ul class="menu__ul header-menu__ul">
+				<ul class="menu__ul header-menu__ul" id="menu">
 					<li class="menu__item header-menu__item">
 						<a href="#people" class="menu__lnk header-menu__lnk js-scroll">
 							FIND PEOPLE
@@ -49,6 +49,9 @@
 						</a>
 					</li>
 				</ul>
+				<button class="burger" id="burger-menu">
+					Menu
+				</button>
 			</nav>
 	</div>
 </header>
@@ -129,7 +132,7 @@
 		</div>
 	</div>
 </section>
-<section class="about section" id="about">
+<section class="about section bg-img__container" id="about">
 	<div class="container">
 		<div class="about__inner">
 			<h3 class="section-title about__title">
@@ -142,12 +145,15 @@
 				It's all anonymous. No mobile numbers, emails or other personal information.
 			</p>
 		</div>
+		<div class="img-wrap about__img-wrap img-mobile about__img-mobile">
+			<img class="about__img" src="img/sections/about.png" alt="Люди общаются между собой">
+		</div>
 	</div>
 </section>
 <section class="contact section" id="contact">
 	<div class="container">
 		<div class="row-content contact__inner">
-			<div class="row-content__main contacts__content">
+			<div class="row-content__main contact__content">
 				<h3 class="section-title contact__title">
 					Contact us
 				</h3>
@@ -158,9 +164,9 @@
 					</button>
 				</form>
 			</div>
-			<div class="row-content__image work__image-wrap">
-				<div class="img-wrap work__img-wrap">
-					<img src="img/sections/contact.png" alt="Contact with us">
+			<div class="row-content__image contact__image-wrap">
+				<div class="img-wrap contact__img-wrap">
+					<img src="img/sections/contact.png" alt="Contact with us" class="contact__image">
 				</div>
 			</div>
 		</div>
@@ -181,6 +187,8 @@
 	</div>
 </footer>
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ -->
 <script src="js/autosize.min.js"></script>
 <script src="js/main.js"></script>
 </body>

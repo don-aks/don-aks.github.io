@@ -64,9 +64,8 @@ h1, h2, h3 {
 }
 
 .btn {
-	border: none;
-	font-family: inherit;
-	cursor: pointer;
+	border: 0;
+  outline: 0;
 	border-radius: 30px;
   background-color: $color-main;
 
@@ -79,6 +78,14 @@ h1, h2, h3 {
   color: $color-text;
   font-style: italic;
   text-transform: uppercase;
+  font-family: inherit;
+	cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+  	background-color: lighten($color-main, 10%);
+  }
 }
 
 .section-title {
@@ -135,12 +142,12 @@ h1, h2, h3 {
 	display: block;
 
 	width: 180px;
-	padding: 10px;
+	padding: 8px;
 	margin: 0 auto;
 
 	border-radius: 30px;
 	border: 1px solid $color-text-lighten;
-	background-color: transparent;
+	background-color: $color-bg;
 
 	font-size: 22px;
 	font-weight: 400;
@@ -157,4 +164,8 @@ h1, h2, h3 {
 		color: inherit;
 		opacity: .7;
 	}
+}
+
+.img-mobile {
+	display: none;
 }

@@ -37,16 +37,20 @@
 			outline: 0;
 		}
 
-		&.active {
+		/* &.active {
 			transition: padding .3s;
 			padding-bottom: 10px;
 			border-bottom: 2px solid $color-text;
-		}
+		} */
 	}
 
 	&__item +
 	&__item {
 		margin-left: 65px;
+	}
+
+	.burger {
+		display: none;
 	}
 }
 
@@ -74,7 +78,7 @@
 	background: url("../img/sections/topscreen.png") no-repeat 50%;
 
 	&__inner {
-		max-width: 67%;
+		max-width: 960px;
 		margin: 0 auto;
 	}
 
@@ -95,6 +99,10 @@
 	&-form-login__input {
 		border-color: #abacc4;
 		background-color: $color-second;
+
+		&:focus {
+			background-color: lighten($color-second, 5%);
+		}
 	}
 }
 
@@ -117,12 +125,7 @@
 	line-height: 80px;
 	font-weight: 500;
 	padding-bottom: 460px;
-	
-	background: {
-		image: url("../img/sections/about.png");
-		repeat: no-repeat;
-		position: 50%;
-	}
+	background: url("../img/sections/about.png") no-repeat 50%;
 
 	&__inner {
 		margin-left: 150px;
